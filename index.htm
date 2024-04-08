@@ -20,12 +20,16 @@
     <meta property="og:description" content='pharadornb.dev portfolio show profile, certificate, reward and project'>
     <meta property="og:locale" content='th_TH'>
 
-    <meta name="google-site-verification" content="Jxlk9H3hxvSZxXp9utR6BpwoY7rF3bux4zMXrxtHPG0" />
+    <meta name="google-site-verification" content="Jxlk9H3hxvSZxXp9utR6BpwoY7rF3bux4zMXrxtHPG0"/>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4MXGE9GRPM"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-4MXGE9GRPM');
@@ -43,7 +47,8 @@
     <!-- <link rel="stylesheet" href="css/all.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <!--  Magnific Popup css file  -->
-    <link rel="stylesheet" href="vendor/Magnific-Popup/dist/magnific-popup.css">
+    <!--    <link rel="stylesheet" href="vendor/Magnific-Popup/dist/magnific-popup.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
     <!--  Owl-carousel css file  -->
     <link rel="stylesheet" href="vendor/owl-carousel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="vendor/owl-carousel/css/owl.theme.default.min.css">
@@ -52,78 +57,81 @@
     <!--  Responsive css file  -->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- icon title file -->
-    <link rel = "icon" href = "img/icon.png" type = "image/x-icon">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <style>
 
-    #logo-dev{
-        font: normal 500 15px/25px;
-    }
-
-    html {
-        scroll-behavior: smooth;
-    }
-
-    #bigbig{
-        font-size: 100px;
-    }
-
-    @media only screen and (max-width: 375px) {
-        #title-name{
-            font-size: 50px;
+        #logo-dev {
+            font: normal 500 15px/25px;
         }
-        #title-name2{
-            font-size: 20px;
+
+        html {
+            scroll-behavior: smooth;
         }
-        #resume1{
-            margin-top: 10px;
+
+        #bigbig {
+            font-size: 100px;
         }
-        #pink{
-            font-size: 28px;
+
+        @media only screen and (max-width: 375px) {
+            #title-name {
+                font-size: 50px;
+            }
+
+            #title-name2 {
+                font-size: 20px;
+            }
+
+            #resume1 {
+                margin-top: 10px;
+            }
+
+            #pink {
+                font-size: 28px;
+            }
         }
-    }
 
 
-    body, .sweet-alert {
-    font-family: 'Kanit', sans-serif;
-    }
+        body, .sweet-alert {
+            font-family: 'Kanit', sans-serif;
+        }
 
-    .loader {
-    position: fixed;
-    z-index: 99;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
+        .loader {
+            position: fixed;
+            z-index: 99;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .loader > img {
-    width: 100px;
-    }
+        .loader > img {
+            width: 100px;
+        }
 
-    .loader.hidden {
-    animation: fadeOut 1s;
-    animation-fill-mode: forwards;
-    }
+        .loader.hidden {
+            animation: fadeOut 1s;
+            animation-fill-mode: forwards;
+        }
 
-    @keyframes fadeOut {
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    }
-    }
+        @keyframes fadeOut {
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
 
-    .thumb {
-    height: 100px;
-    border: 1px solid black;
-    margin: 10px;
-    }
+        .thumb {
+            height: 100px;
+            border: 1px solid black;
+            margin: 10px;
+        }
 
     </style>
 </head>
@@ -134,634 +142,659 @@
 <!--        <img src="img/loader.gif" />-->
 <!--    </div>-->
 
-    <!--  ======================= Start Header Area ============================== -->
-    <header class="header_area">
-        <div class="main-menu">
-            <nav class="navbar navbar-expand-lg navbar-light">
-<!--                <a class="navbar-brand" href="#"><img src="img/logo2.png" alt="logo"></a>-->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+<!--  ======================= Start Header Area ============================== -->
+<header class="header_area">
+    <div class="main-menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <!--                <a class="navbar-brand" href="#"><img src="img/logo2.png" alt="logo"></a>-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <div class="mr-auto"></div>
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#"><i class="fas fa-home"></i> Home<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">INTRODUCE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skill">TECHNICAL</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#activities">Activities</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#education">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">contact</a>
-                        </li>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mr-auto"></div>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fas fa-home"></i> Home<span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">INTRODUCE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skill">TECHNICAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#activities">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </li>
 
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!--  ======================= End Header Area ============================== -->
-
-    <!--  ======================= Start Main Area ================================ -->
-    <main class="site-main">
-
-        <!--  ======================= Start Banner Area =======================  -->
-        <section class="site-banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 site-title">
-                        <h3 class="title-text">I am</h3>
-                        <h1 class="title-text text-uppercase" id="title-name">PHARADORN</h1>
-                        <h1 class="title-text text-uppercase" id="title-name">BOONRUAM</h1>
-                        <h4 class="title-text text-uppercase" id="title-name2">INFORMATION TECHNOLOGY(ES)</h4>
-                        <div class="site-buttons">
-                            <div class="d-flex flex-row flex-wrap mt-3">
-                                <a href="#about"><button type="button" class="btn button primary-button mr-4 text-uppercase">READ MORE</button></a>
-                                <!-- <a id="resume1" href="PharadornBoonruam-Resume.pdf" target="_blank"><button type="button" class="btn button secondary-button text-uppercase"><i class="fas fa-file-pdf"></i> GET RESUME</button></a> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 banner-image">
-                        <img src="img/banner/banner-image.png" alt="banner-img" class="img-fluid">
-                    </div>
-                </div>
+                </ul>
             </div>
-        </section>
-        <!--  ======================= End Banner Area =======================  -->
+        </nav>
+    </div>
+</header>
+<!--  ======================= End Header Area ============================== -->
 
-        <!--  ========================= About Area ==========================  -->
-        <div id="about"></div>
-        <br/>
-        <br/>
-        <section class="about-area">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="about-image">
-                            <img src="img/about-us.png" alt="About us" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 about-title">
-                        <h2 class="text-uppercase pt-5">
-                            <span>Let me</span>
-                            <span>introduce</span>
-                            <span>myself</span>
-                        </h2>
-                        <div class="paragraph py-4 w-75">
-                            <p class="para">
-                                My name is Mr. Pharadorn Boonruam. My nickname is Bom. I'm 22 year-old. <br/>
-                                I was born on 16th, February 1999 C.S. <br/>
-                                I study at Suranaree University of Techonolgy, Nakhonrachasima, TH <br/>
-                                Information Techonolgy(Enterprise Software) Program, Social Techonolgy School <br/>
-                            </p>
-                            <p class="para">
-                                I’m interested in the position of <b>"Software Developer"</b> in the way of specializing in order 
-                                to handle and produce software project at the enterprise level of organization and consult
-                            </p>
-                        </div>
-                        <a href="ResumePharadornV1.1.pdf" target="_blank"><button type="button" class="btn button primary-button text-uppercase"><i class="fas fa-file-pdf"></i>  GET RESUME</button></a>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!--  ======================= Start Main Area ================================ -->
+<main class="site-main">
 
-        <!--  ========================= End About Area ==========================  -->
-
-                <!--  ====================== Start Services Area =============================  -->
-                <!-- <div id="hobby"></div>
-                <br/>
-                <br/>
-                <br/>
-                <section class="services-area">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12 text-center services-title">
-                                <h1 class="text-uppercase title-text">My Hobby</h1>
-                            </div>
-                        </div>
-                        <center><div class="container services-list" id="wow">
-                            <div class="row">
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="services">
-                                        <div class="sevices-img text-center py-4">
-                                            <img src="img/services/s5.png" alt="Services-1">
-                                        </div>
-                                        <div class="card-body text-center">
-                                            <h5 class="card-title text-uppercase font-roboto">Travel</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="services">
-                                        <div class="sevices-img text-center py-4">
-                                            <img src="img/services/s6.png" alt="Services-2">
-                                        </div>
-                                        <div class="card-body text-center">
-                                            <h5 class="card-title text-uppercase font-roboto">Find a NewTech</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="services">
-                                        <div class="sevices-img text-center py-4">
-                                            <img src="img/services/s7.png" alt="Services-3">
-                                        </div>
-                                        <div class="card-body text-center">
-                                            <h5 class="card-title text-uppercase font-roboto">Repair Machine</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <div class="services">
-                                        <div class="sevices-img text-center py-4">
-                                            <img src="img/services/s8.png" alt="Services-4">
-                                        </div>
-                                        <div class="card-body text-center">
-                                            <h5 class="card-title text-uppercase font-roboto">Coding</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></center>
-                    </div>
-                </section> -->
-        
-                <!--  ====================== End Services Area =============================  -->
-
-        <!--  ======================== Brand Area ==============================  -->
-
-        <div id="skill"></div>
-        <section class="about-area">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-12">
-                        <div class="about-title" id="her">
-                            <h1 class="text-uppercase title-h1">TECHNICAL</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </section>
-
-        <section class="brand-area">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-12 col-md-12">
-                        <div class="first-row row">
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="img/brands/logo11.png" alt="Brand-1 ">
-                                    <br/>
-                                    <h6 id="logo-dev">Control Version</h6>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="img/brands/logo12.png" alt="Brand-2 ">
-                                    <br/>
-                                    <h6 id="logo-dev">Object-Oriented</h6>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="img/brands/logo13.png" alt="Brand-3 ">
-                                    <h6 id="logo-dev">Font-end Web</h6>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="img/brands/logo14.png" alt="Brand-4">
-                                    <h6 id="logo-dev">Back-end Web</h6>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="img/brands/logo15.png" alt="Brand-5 ">
-                                    <h6 id="logo-dev">Database</h6>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="img/brands/logo16.png" alt="Brand-6">
-                                    <h6 id="logo-dev">Mobile+Cross App</h6>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="img/brands/logo17.png" alt="Brand-7 ">
-                                    <h6 id="logo-dev">IoT, Linux & Network</h6>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="img/brands/logo18.png" alt="Brand-8 ">
-                                    <h6 id="logo-dev">Basic Programing</h6>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="img/brands/logo19.png" alt="Brand-9">
-                                    <h6 id="logo-dev">.Net Framework</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-12 col-md-12">
-                        <div class="experience-area">
-                            <div class="d-flex flex-row years-area">
-                                <h2 class="p-3 years" id="bigbig">I</h2>
-                                <h2>
-                                    <br/>
-                                        <span>Love</span>
-                                        <span>Software</span>
-                                    <br/>
-                                </h2>
-                            </div>
-                            <!-- <div class="d-flex flex-row flex-wrap call-area">
-                                <span><i class="fas fa-phone-alt fa-3x px-3"></i></span>
-                                <div class="call-now">
-                                    <a href="#" class="text-uppercase h4 font-roboto">Call Now</a>
-                                    <span class="font-roboto py-2">(+91)-800-555-4986</span>
-                                </div>
-                            </div> -->
-                            <!-- <div class="bg-panel"></div> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--  ======================== End Brand Area ==============================  -->
-
-        <!--  ======================= Project Area =============================  -->
-        <div id="activities"></div>
-        <section class="project-area">
-            <div class="container">
-                <div class="project-title pb-5">
-                    <h1 class="text-uppercase title-h1" id="pink"><br/><br/>Recently Done Activity</h1>
-                </div>
-
-                
-                <div class="button-group mt-1">
-                    <button type="button" id="btn btn-fill" class="btn btn-primaryactive" data-filter="*" style="color: blue;"><i class="fas fa-filter"></i> SHOW All</button>
-                    <button type="button" data-filter=".project" style="color: green;">project</button>
-                    <button type="button" data-filter=".experience" style="color: green;">Experience</button>
-                    <button type="button" data-filter=".extracurricular" style="color: green;">Activity</button>
-                </div>
-                <br/>
-
-                <div class="row grid" id="hidden_content">
-
-                    <!-- special project(Dorm) -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item project">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="img/portfolio/p11.jpg">
-                                    <img src="img/portfolio/p11.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> special project</h6>
-                                <h4 class="text-uppercase">Domitory reserve(2019)</h4>
-                                <span class="text-secondary">Domitory reserve for covid-19 project - Java Command, Java Concept, Java UML,</span><br/>
-                                <a href="https://youtu.be/Avgj1mOqYlY"><span class="text-secondary"><i class="fab fa-youtube">  </i> OOP WITH JAVA PROJECT | B6134228</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- special project(Uniplan) -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item project">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="img/portfolio/p12.jpg">
-                                    <img src="img/portfolio/p12.jpg"  class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> special project</h6>
-                                <h4 class="text-uppercase">Uniplan WEB(2020)</h4>
-                                <span class="text-secondary">Uniplan (University Study Planner) ASP.NET C# MVC</span><br/>
-                                <a href="https://github.com/bom2542/Uniplan2020-WebAppASP.NET"><span class="text-secondary"><i class="fab fa-github">  </i> Uniplan2020-WebAppASP.NET</span></a><br/>
-                                <a href="https://youtu.be/BY44aefOK1Q"><span class="text-secondary"><i class="fab fa-youtube">  </i> Uniplan Project | Group 3 | 06-11-2563</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- special project(KoratLrt) -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item project">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="img/portfolio/p13.jpg">
-                                    <img src="img/portfolio/p13.jpg"  class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> special project</h6>
-                                <h4 class="text-uppercase">KoratLRT SOFTWARE(2020)</h4>
-                                <span class="text-secondary">KoratLRT (Nakhon Ratchasima Light-rail Transportation ticket) - Java GUI</span><br/>
-                                <a href="https://github.com/bom2542/KotatLRT2020-OOPJavaGUI"><span class="text-secondary"><i class="fab fa-github">  </i> KotatLRT2020-OOPJavaGUI</span></a><br/>
-                                <a href="https://youtu.be/9qOKr8r8rtI"><span class="text-secondary"><i class="fab fa-youtube">  </i> ProjectAdvOOA(01-2563) | Group 1 | IT_SUT</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- special project(TravelPlan-Web) -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item project">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="img/portfolio/p14.jpg">
-                                    <img src="img/portfolio/p14.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> special project</h6>
-                                <h4 class="text-uppercase">Travel Plan Web(2021)</h4>
-                                <span class="text-secondary"> Travel Plan WebApp - PHP, HTML5, JS, Jquery, Json, JsObject, Ajax</span><br/>
-                                <a href="http://pharadorn.lnw.mn/TravelPlan/"><span class="text-secondary"><i class="fab fa-chrome">  </i> pharadorn.lnw.mn/TravelPlan/</span></a><br/>
-                                <a href="https://github.com/bom2542/TravelPlan2021-WebAppScript"><span class="text-secondary"><i class="fab fa-github">  </i> TravelPlan2021-WebAppScript</span></a><br/>
-                                <a href="https://youtu.be/V24NELusz1Y"><span class="text-secondary"><i class="fab fa-youtube">  </i> Travel Plan System | G02 | Script | 24-FEB-2021</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- special project(TravelPlan-Mobile) -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item project">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="img/portfolio/p15.jpg">
-                                    <img src="img/portfolio/p15.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> special project</h6>
-                                <h4 class="text-uppercase">Travel Plan Mobile(2021)</h4>
-                                <span class="text-secondary">  Travel Plan MobileApp - Android, Java, Json API, Location based service, phpmyadmin</span><br/>
-                                <a href="https://github.com/bom2542/TravelPlanApp2021-MobileAppAndroid"><span class="text-secondary"><i class="fab fa-github">  </i> TravelPlanApp2021-MobileAppAndroid</span></a><br/>
-                                <a href="https://youtu.be/wKF08OI6O7g"><span class="text-secondary"><i class="fab fa-youtube">  </i> Phishing Project MobileApp | 28/12/2563</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- W o r k   E x p e r i n c e -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item project experience">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="img/portfolio/p21.jpg">
-                                    <img src="img/portfolio/p21.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> special project, experience</h6>
-                                <h4 class="text-uppercase">DEC - APR 2021</h4>
-                                <span class="text-secondary">  Developed the system of RSPG-SUT (Plant Genetic Conservation Project Under the Royal Initiation of Her Royal Highness Princess Maha Chakri Sirindhorn) management Suranaree University of Technology, Technothani, Part-time student(Project manager and development)</span><br/>
-                                <a href="http://student.sut.ac.th/b6134228/RspgBudget2563/"><span class="text-secondary"><i class="fab fa-chrome">  </i> /b6134228/RspgBudget2563/</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item experience">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="img/portfolio/p22.jpg">
-                                    <img src="img/portfolio/p22.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> experience</h6>
-                                <h4 class="text-uppercase">APR - JUL 2018</h4>
-                                <span class="text-secondary">  Worked at Tesco Lotus express(Toedprakiat Rd.), Bangkruai, Nonthaburi, Part-time</span><br/>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- extracurricular -->
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item extracurricular">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="img/portfolio/p31.jpg">
-                                    <img src="img/portfolio/p31.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> extracurricular</h6>
-                                <h4 class="text-uppercase">Introduce camp(2018)</h4>
-                                <span class="text-secondary">  Senior meet with juniors for Introduce University Camp 1 -2. I'm staff., Pharaibuengwittayakom School, Si Sa Ket, (2018, 2019)</span><br/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item extracurricular">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="img/portfolio/p32.jpg">
-                                    <img src="img/portfolio/p32.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> extracurricular</h6>
-                                <h4 class="text-uppercase">IoT camp(2019)</h4>
-                                <span class="text-secondary">  IoT Camp, Thai Programmer, Kx Building KMUTT, Bangkok, (2019)</span><br/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item extracurricular">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="img/portfolio/p33.jpg">
-                                    <img src="img/portfolio/p33.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> extracurricular</h6>
-                                <h4 class="text-uppercase">Ai career(2019)</h4>
-                                <span class="text-secondary">  Introduce of career about artificial Intelligence, AiAT(Ai association of Thailand), Online, (2019)</span><br/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item extracurricular">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="img/portfolio/p34.jpg">
-                                    <img src="img/portfolio/p34.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> extracurricular</h6>
-                                <h4 class="text-uppercase">Dev ops(2020)</h4>
-                                <span class="text-secondary">  Dev ops by panupong Junklang(Docker, GitLab for Oganization), Lab com SUT, (2020)</span><br/>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12 element-item extracurricular">
-                        <div class="our-project">
-                            <div class="img">
-                                <a class="test-popup-link" href="img/portfolio/p35.jpg">
-                                    <img src="img/portfolio/p35.jpg" class="img-fluid">
-                                </a>
-                            </div>
-                            <div class="title py-4">
-                                <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> extracurricular</h6>
-                                <h4 class="text-uppercase">Bootcamp FSI(2021)</h4>
-                                <span class="text-secondary">  Bootcamp FSI(Future Skills Initiative) AI-900 Microsoft Azure AI Fundamentals, Iverson x Microsoft: Skills for the future, Digital-Courseware, (2021)</span><br/>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </section>
-
-        <!--  ======================= End Project Area =============================  -->
-
-        <!--  ======================== About Me Area ==============================  -->
-        <div id="education"></div>
-        <br/>
-        <br/>
-        <section class="about-area">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-12">
-                        <div class="about-title">
-                            <h1 class="text-uppercase title-h1" id="pink">Education</h1>
-                            <!-- <p class="para">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, deleniti
-                                recusandae. Esse incidunt rem repellendus ab voluptates maxime? Nemo, numquam!
-                            </p> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container carousel py-lg-5">
-                <div class="owl-carousel owl-theme">
-                        <div class="client row">
-                            <div class="col-lg-4 col-md-12 client-img">
-                                <img src="img/testimonials/t5.jpg" alt="img1" class="img-fluid">
-                            </div>
-                            <div class="col-lg-8 col-md-12 about-client">
-                                <h4 class="text-uppercase">2018 - 2022</h4>
-                                <p class="para">Suranaree University of Technology, Nakhon Ratchasima B.I.S. in Information Technology (Enterprise Software), Expected graduation November 2022</p>
-                            </div>
-                        </div>
-
-                        <div class="client row">
-                        <div class="col-lg-4 col-md-12 client-img">
-                            <img src="img/testimonials/t4.jpg" alt="img2" class="img-fluid">
-                        </div>
-                        <div class="col-lg-8 col-md-12 about-client">
-                            <h4 class="text-uppercase">2017 - 2012</h4>
-                            <p class="para">Phraibuengwittayakhom School, Si Sa Ket, High School Diaploma</p>
-                        </div>
-                    </div>
-
-                    <div class="client row">
-                        <div class="col-lg-4 col-md-12 client-img">
-                            <img src="img/testimonials/t3.jpg" alt="img1" class="img-fluid">
-                        </div>
-                        <div class="col-lg-8 col-md-12 about-client">
-                            <h4 class="text-uppercase">2016 - 2011</h4>
-                            <p class="para">Anubanphraibueng School, Si Sa Ket, Primary School Diaploma</p>
-                        </div>
-                    </div>
-                    <!-- <div class="client row">
-                        <div class="col-lg-4 col-md-12 client-img">
-                            <img src="img/testimonials/t2.jpg" alt="img2" class="img-fluid">
-                        </div>
-                        <div class="col-lg-8 col-md-12 about-client">
-                            <h4 class="text-uppercase">Mac Hill</h4>
-                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
-                                consequuntur ratione, obcaecati corrupti deserunt.</p>
-                        </div>
-                    </div> -->
-                    <!-- <div class="client row">
-                        <div class="col-lg-4 col-md-12 client-img">
-                            <img src="img/testimonials/t1.jpg" alt="img1" class="img-fluid">
-                        </div>
-                        <div class="col-lg-8 col-md-12 about-client">
-                            <h4 class="text-uppercase">John Martin</h4>
-                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
-                                consequuntur ratione, obcaecati corrupti deserunt.</p>
-                        </div>
-                    </div> -->
-                    <!-- <div class="client row">
-                        <div class="col-lg-4 col-md-12 client-img">
-                            <img src="img/testimonials/t2.jpg" alt="img2" class="img-fluid">
-                        </div>
-                        <div class="col-lg-8 col-md-12 about-client">
-                            <h4 class="text-uppercase">Mac Hill</h4>
-                            <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
-                                consequuntur ratione, obcaecati corrupti deserunt.</p>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-
-        </section>
-
-        <!--  ======================== End About Me Area ==============================  -->
-
-        <!--  ========================== Subscribe me Area ============================  -->
-        <!-- <section class="subscribe-us-area">
-            <div class="container subscribe">
-                <div class="row">
-                    <div class="col-lg-12 text-center subscribe-title">
-                        <h4 class="text-uppercase">Get Update From anywhere</h4>
-                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-                            consequuntur.</p>
-                    </div>
-                </div>
-                <div class="d-sm-flex justify-content-center">
-                    <form class="w-50">
-                        <div class="row d-flex flex-row flex-wrap">
-                            <div class="col input-textbox">
-                                <input type="text" id="txtemail" class="form-control" placeholder="Email">
-                            </div>
-                            <div class="col">
-                                <div class="btn-submit">
-                                    <button type="submit" class="btn btn-success float-right">Subscribe</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section> -->
-        <!--  ========================== End Subscribe me Area ============================  -->
-
-
-    </main>
-    <!--  ======================= End Main Area ================================ -->
-
-    <div id="contact"></div>
-        <br/>
-        <br/>
-    <footer class="footer-area">
+    <!--  ======================= Start Banner Area =======================  -->
+    <section class="site-banner">
         <div class="container">
-            <div class="">
-                <div class="site-logo text-center py-4">
-                    <!-- <a href="#"><img src="img/logo.png" alt="logo"></a> -->
+            <div class="row">
+                <div class="col-lg-6 col-md-12 site-title">
+                    <h3 class="title-text">I am</h3>
+                    <h1 class="title-text text-uppercase" id="title-name">PHARADORN</h1>
+                    <h1 class="title-text text-uppercase" id="title-name">BOONRUAM</h1>
+                    <h4 class="title-text text-uppercase" id="title-name2">INFORMATION TECHNOLOGY(ES)</h4>
+                    <div class="site-buttons">
+                        <div class="d-flex flex-row flex-wrap mt-3">
+                            <a href="#about">
+                                <button type="button" class="btn button primary-button mr-4 text-uppercase">READ MORE
+                                </button>
+                            </a>
+                            <!-- <a id="resume1" href="PharadornBoonruam-Resume.pdf" target="_blank"><button type="button" class="btn button secondary-button text-uppercase"><i class="fas fa-file-pdf"></i> GET RESUME</button></a> -->
+                        </div>
+                    </div>
                 </div>
-                <div class="social text-center">
-                    <h5 class="text-uppercase">Follow me</h5>
-                    <a href="https://www.facebook.com/PharadornB/"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/boma_pd/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://github.com/bom2542"><i class="fab fa-github"></i></a>
-                    <a href = "mailto: b6134228@g.sut.ac.th"><i class="fas fa-envelope"></i></a>
-                </div>
-                <div class="copyrights text-center">
-                    <p class="para">
-                        © 2021 All rights reserved | Ver: 2021-04-17 <br/> Dev by <a href="https://www.facebook.com/PharadornB/">Pharadorn Boonruam</a>
-                    </p>
+                <div class="col-lg-6 col-md-12 banner-image">
+                    <img src="img/banner/banner-image.png" alt="banner-img" class="img-fluid">
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
+    <!--  ======================= End Banner Area =======================  -->
 
-    <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+    <!--  ========================= About Area ==========================  -->
+    <div id="about"></div>
+    <br/>
+    <br/>
+    <section class="about-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="about-image">
+                        <img src="img/about-us.png" alt="About us" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 about-title">
+                    <h2 class="text-uppercase pt-5">
+                        <span>Let me</span>
+                        <span>introduce</span>
+                        <span>myself</span>
+                    </h2>
+                    <div class="paragraph py-4 w-75">
+                        <p class="para">
+                            My name is Mr. Pharadorn Boonruam. My nickname is Bom. I'm 22 year-old. <br/>
+                            I was born on 16th, February 1999 C.S. <br/>
+                            I study at Suranaree University of Techonolgy, Nakhonrachasima, TH <br/>
+                            Information Techonolgy(Enterprise Software) Program, Social Techonolgy School <br/>
+                        </p>
+                        <p class="para">
+                            I’m interested in the position of <b>"Software Developer"</b> in the way of specializing in
+                            order
+                            to handle and produce software project at the enterprise level of organization and consult
+                        </p>
+                    </div>
+                    <a href="ResumePharadornV1.1.pdf" target="_blank">
+                        <button type="button" class="btn button primary-button text-uppercase"><i
+                                class="fas fa-file-pdf"></i> GET RESUME
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  ========================= End About Area ==========================  -->
+
+    <!--  ====================== Start Services Area =============================  -->
+    <!-- <div id="hobby"></div>
+    <br/>
+    <br/>
+    <br/>
+    <section class="services-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center services-title">
+                    <h1 class="text-uppercase title-text">My Hobby</h1>
+                </div>
+            </div>
+            <center><div class="container services-list" id="wow">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="services">
+                            <div class="sevices-img text-center py-4">
+                                <img src="img/services/s5.png" alt="Services-1">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-uppercase font-roboto">Travel</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="services">
+                            <div class="sevices-img text-center py-4">
+                                <img src="img/services/s6.png" alt="Services-2">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-uppercase font-roboto">Find a NewTech</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="services">
+                            <div class="sevices-img text-center py-4">
+                                <img src="img/services/s7.png" alt="Services-3">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-uppercase font-roboto">Repair Machine</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="services">
+                            <div class="sevices-img text-center py-4">
+                                <img src="img/services/s8.png" alt="Services-4">
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-uppercase font-roboto">Coding</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div></center>
+        </div>
+    </section> -->
+
+    <!--  ====================== End Services Area =============================  -->
+
+    <!--  ======================== Brand Area ==============================  -->
+
+    <div id="skill"></div>
+    <section class="about-area">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <div class="about-title" id="her">
+                        <h1 class="text-uppercase title-h1">TECHNICAL</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="brand-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-6 col-lg-12 col-md-12">
+                    <div class="first-row row">
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="single-brand">
+                                <img src="img/brands/logo11.png" alt="Brand-1 ">
+                                <br/>
+                                <h6 id="logo-dev">Control Version</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="single-brand">
+                                <img src="img/brands/logo12.png" alt="Brand-2 ">
+                                <br/>
+                                <h6 id="logo-dev">Object-Oriented</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="single-brand">
+                                <img src="img/brands/logo13.png" alt="Brand-3 ">
+                                <h6 id="logo-dev">Font-end Web</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="single-brand">
+                                <img src="img/brands/logo14.png" alt="Brand-4">
+                                <h6 id="logo-dev">Back-end Web</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="single-brand">
+                                <img src="img/brands/logo15.png" alt="Brand-5 ">
+                                <h6 id="logo-dev">Database</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="single-brand">
+                                <img src="img/brands/logo16.png" alt="Brand-6">
+                                <h6 id="logo-dev">Mobile+Cross App</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="single-brand">
+                                <img src="img/brands/logo17.png" alt="Brand-7 ">
+                                <h6 id="logo-dev">IoT, Linux & Network</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="single-brand">
+                                <img src="img/brands/logo18.png" alt="Brand-8 ">
+                                <h6 id="logo-dev">Basic Programing</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="single-brand">
+                                <img src="img/brands/logo19.png" alt="Brand-9">
+                                <h6 id="logo-dev">.Net Framework</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-12 col-md-12">
+                    <div class="experience-area">
+                        <div class="d-flex flex-row years-area">
+                            <h2 class="p-3 years" id="bigbig">I</h2>
+                            <h2>
+                                <br/>
+                                <span>Love</span>
+                                <span>Software</span>
+                                <br/>
+                            </h2>
+                        </div>
+                        <!-- <div class="d-flex flex-row flex-wrap call-area">
+                            <span><i class="fas fa-phone-alt fa-3x px-3"></i></span>
+                            <div class="call-now">
+                                <a href="#" class="text-uppercase h4 font-roboto">Call Now</a>
+                                <span class="font-roboto py-2">(+91)-800-555-4986</span>
+                            </div>
+                        </div> -->
+                        <!-- <div class="bg-panel"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  ======================== End Brand Area ==============================  -->
+
+    <!--  ======================= Project Area =============================  -->
+    <div id="activities"></div>
+    <section class="project-area">
+        <div class="container">
+            <div class="project-title pb-5">
+                <h1 class="text-uppercase title-h1" id="pink"><br/><br/>Recently Done Activity</h1>
+            </div>
+
+
+            <div class="button-group mt-1">
+                <button type="button" id="btn btn-fill" class="btn btn-primaryactive" data-filter="*"
+                        style="color: blue;"><i class="fas fa-filter"></i> SHOW All
+                </button>
+                <button type="button" data-filter=".project" style="color: green;">project</button>
+                <button type="button" data-filter=".experience" style="color: green;">Experience</button>
+                <button type="button" data-filter=".extracurricular" style="color: green;">Activity</button>
+            </div>
+            <br/>
+
+            <div class="row grid" id="hidden_content">
+
+                <!-- special project(Dorm) -->
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item project">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="img/portfolio/p11.jpg">
+                                <img src="img/portfolio/p11.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> special project</h6>
+                            <h4 class="text-uppercase">Domitory reserve(2019)</h4>
+                            <span class="text-secondary">Domitory reserve for covid-19 project - Java Command, Java Concept, Java UML,</span><br/>
+                            <a href="https://youtu.be/Avgj1mOqYlY"><span class="text-secondary"><i
+                                    class="fab fa-youtube">  </i> OOP WITH JAVA PROJECT | B6134228</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- special project(Uniplan) -->
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item project">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="img/portfolio/p12.jpg">
+                                <img src="img/portfolio/p12.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> special project</h6>
+                            <h4 class="text-uppercase">Uniplan WEB(2020)</h4>
+                            <span class="text-secondary">Uniplan (University Study Planner) ASP.NET C# MVC</span><br/>
+                            <a href="https://github.com/bom2542/Uniplan2020-WebAppASP.NET"><span class="text-secondary"><i
+                                    class="fab fa-github">  </i> Uniplan2020-WebAppASP.NET</span></a><br/>
+                            <a href="https://youtu.be/BY44aefOK1Q"><span class="text-secondary"><i
+                                    class="fab fa-youtube">  </i> Uniplan Project | Group 3 | 06-11-2563</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- special project(KoratLrt) -->
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item project">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="img/portfolio/p13.jpg">
+                                <img src="img/portfolio/p13.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> special project</h6>
+                            <h4 class="text-uppercase">KoratLRT SOFTWARE(2020)</h4>
+                            <span class="text-secondary">KoratLRT (Nakhon Ratchasima Light-rail Transportation ticket) - Java GUI</span><br/>
+                            <a href="https://github.com/bom2542/KotatLRT2020-OOPJavaGUI"><span class="text-secondary"><i
+                                    class="fab fa-github">  </i> KotatLRT2020-OOPJavaGUI</span></a><br/>
+                            <a href="https://youtu.be/9qOKr8r8rtI"><span class="text-secondary"><i
+                                    class="fab fa-youtube">  </i> ProjectAdvOOA(01-2563) | Group 1 | IT_SUT</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- special project(TravelPlan-Web) -->
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item project">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="img/portfolio/p14.jpg">
+                                <img src="img/portfolio/p14.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> special project</h6>
+                            <h4 class="text-uppercase">Travel Plan Web(2021)</h4>
+                            <span class="text-secondary"> Travel Plan WebApp - PHP, HTML5, JS, Jquery, Json, JsObject, Ajax</span><br/>
+                            <a href="http://pharadorn.lnw.mn/TravelPlan/"><span class="text-secondary"><i
+                                    class="fab fa-chrome">  </i> pharadorn.lnw.mn/TravelPlan/</span></a><br/>
+                            <a href="https://github.com/bom2542/TravelPlan2021-WebAppScript"><span
+                                    class="text-secondary"><i
+                                    class="fab fa-github">  </i> TravelPlan2021-WebAppScript</span></a><br/>
+                            <a href="https://youtu.be/V24NELusz1Y"><span class="text-secondary"><i
+                                    class="fab fa-youtube">  </i> Travel Plan System | G02 | Script | 24-FEB-2021</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- special project(TravelPlan-Mobile) -->
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item project">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="img/portfolio/p15.jpg">
+                                <img src="img/portfolio/p15.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> special project</h6>
+                            <h4 class="text-uppercase">Travel Plan Mobile(2021)</h4>
+                            <span class="text-secondary">  Travel Plan MobileApp - Android, Java, Json API, Location based service, phpmyadmin</span><br/>
+                            <a href="https://github.com/bom2542/TravelPlanApp2021-MobileAppAndroid"><span
+                                    class="text-secondary"><i class="fab fa-github">  </i> TravelPlanApp2021-MobileAppAndroid</span></a><br/>
+                            <a href="https://youtu.be/wKF08OI6O7g"><span class="text-secondary"><i
+                                    class="fab fa-youtube">  </i> Phishing Project MobileApp | 28/12/2563</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- W o r k   E x p e r i n c e -->
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item project experience">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="img/portfolio/p21.jpg">
+                                <img src="img/portfolio/p21.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> special project, experience</h6>
+                            <h4 class="text-uppercase">DEC - APR 2021</h4>
+                            <span class="text-secondary">  Developed the system of RSPG-SUT (Plant Genetic Conservation Project Under the Royal Initiation of Her Royal Highness Princess Maha Chakri Sirindhorn) management Suranaree University of Technology, Technothani, Part-time student(Project manager and development)</span><br/>
+                            <a href="http://student.sut.ac.th/b6134228/RspgBudget2563/"><span class="text-secondary"><i
+                                    class="fab fa-chrome">  </i> /b6134228/RspgBudget2563/</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item experience">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="img/portfolio/p22.jpg">
+                                <img src="img/portfolio/p22.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> experience</h6>
+                            <h4 class="text-uppercase">APR - JUL 2018</h4>
+                            <span class="text-secondary">  Worked at Tesco Lotus express(Toedprakiat Rd.), Bangkruai, Nonthaburi, Part-time</span><br/>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- extracurricular -->
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item extracurricular">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="img/portfolio/p31.jpg">
+                                <img src="img/portfolio/p31.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> extracurricular</h6>
+                            <h4 class="text-uppercase">Introduce camp(2018)</h4>
+                            <span class="text-secondary">  Senior meet with juniors for Introduce University Camp 1 -2. I'm staff., Pharaibuengwittayakom School, Si Sa Ket, (2018, 2019)</span><br/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item extracurricular">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="img/portfolio/p32.jpg">
+                                <img src="img/portfolio/p32.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> extracurricular</h6>
+                            <h4 class="text-uppercase">IoT camp(2019)</h4>
+                            <span class="text-secondary">  IoT Camp, Thai Programmer, Kx Building KMUTT, Bangkok, (2019)</span><br/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item extracurricular">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="img/portfolio/p33.jpg">
+                                <img src="img/portfolio/p33.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> extracurricular</h6>
+                            <h4 class="text-uppercase">Ai career(2019)</h4>
+                            <span class="text-secondary">  Introduce of career about artificial Intelligence, AiAT(Ai association of Thailand), Online, (2019)</span><br/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item extracurricular">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="img/portfolio/p34.jpg">
+                                <img src="img/portfolio/p34.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> extracurricular</h6>
+                            <h4 class="text-uppercase">Dev ops(2020)</h4>
+                            <span class="text-secondary">  Dev ops by panupong Junklang(Docker, GitLab for Oganization), Lab com SUT, (2020)</span><br/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 element-item extracurricular">
+                    <div class="our-project">
+                        <div class="img">
+                            <a class="test-popup-link" href="img/portfolio/p35.jpg">
+                                <img src="img/portfolio/p35.jpg" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="title py-4">
+                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> extracurricular</h6>
+                            <h4 class="text-uppercase">Bootcamp FSI(2021)</h4>
+                            <span class="text-secondary">  Bootcamp FSI(Future Skills Initiative) AI-900 Microsoft Azure AI Fundamentals, Iverson x Microsoft: Skills for the future, Digital-Courseware, (2021)</span><br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--  ======================= End Project Area =============================  -->
+
+    <!--  ======================== About Me Area ==============================  -->
+    <div id="education"></div>
+    <br/>
+    <br/>
+    <section class="about-area">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <div class="about-title">
+                        <h1 class="text-uppercase title-h1" id="pink">Education</h1>
+                        <!-- <p class="para">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, deleniti
+                            recusandae. Esse incidunt rem repellendus ab voluptates maxime? Nemo, numquam!
+                        </p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container carousel py-lg-5">
+            <div class="owl-carousel owl-theme">
+                <div class="client row">
+                    <div class="col-lg-4 col-md-12 client-img">
+                        <img src="img/testimonials/t5.jpg" alt="img1" class="img-fluid">
+                    </div>
+                    <div class="col-lg-8 col-md-12 about-client">
+                        <h4 class="text-uppercase">2018 - 2022</h4>
+                        <p class="para">Suranaree University of Technology, Nakhon Ratchasima B.I.S. in Information
+                            Technology (Enterprise Software), Expected graduation November 2022</p>
+                    </div>
+                </div>
+
+                <div class="client row">
+                    <div class="col-lg-4 col-md-12 client-img">
+                        <img src="img/testimonials/t4.jpg" alt="img2" class="img-fluid">
+                    </div>
+                    <div class="col-lg-8 col-md-12 about-client">
+                        <h4 class="text-uppercase">2017 - 2012</h4>
+                        <p class="para">Phraibuengwittayakhom School, Si Sa Ket, High School Diaploma</p>
+                    </div>
+                </div>
+
+                <div class="client row">
+                    <div class="col-lg-4 col-md-12 client-img">
+                        <img src="img/testimonials/t3.jpg" alt="img1" class="img-fluid">
+                    </div>
+                    <div class="col-lg-8 col-md-12 about-client">
+                        <h4 class="text-uppercase">2016 - 2011</h4>
+                        <p class="para">Anubanphraibueng School, Si Sa Ket, Primary School Diaploma</p>
+                    </div>
+                </div>
+                <!-- <div class="client row">
+                    <div class="col-lg-4 col-md-12 client-img">
+                        <img src="img/testimonials/t2.jpg" alt="img2" class="img-fluid">
+                    </div>
+                    <div class="col-lg-8 col-md-12 about-client">
+                        <h4 class="text-uppercase">Mac Hill</h4>
+                        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                            consequuntur ratione, obcaecati corrupti deserunt.</p>
+                    </div>
+                </div> -->
+                <!-- <div class="client row">
+                    <div class="col-lg-4 col-md-12 client-img">
+                        <img src="img/testimonials/t1.jpg" alt="img1" class="img-fluid">
+                    </div>
+                    <div class="col-lg-8 col-md-12 about-client">
+                        <h4 class="text-uppercase">John Martin</h4>
+                        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                            consequuntur ratione, obcaecati corrupti deserunt.</p>
+                    </div>
+                </div> -->
+                <!-- <div class="client row">
+                    <div class="col-lg-4 col-md-12 client-img">
+                        <img src="img/testimonials/t2.jpg" alt="img2" class="img-fluid">
+                    </div>
+                    <div class="col-lg-8 col-md-12 about-client">
+                        <h4 class="text-uppercase">Mac Hill</h4>
+                        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
+                            consequuntur ratione, obcaecati corrupti deserunt.</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+    </section>
+
+    <!--  ======================== End About Me Area ==============================  -->
+
+    <!--  ========================== Subscribe me Area ============================  -->
+    <!-- <section class="subscribe-us-area">
+        <div class="container subscribe">
+            <div class="row">
+                <div class="col-lg-12 text-center subscribe-title">
+                    <h4 class="text-uppercase">Get Update From anywhere</h4>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+                        consequuntur.</p>
+                </div>
+            </div>
+            <div class="d-sm-flex justify-content-center">
+                <form class="w-50">
+                    <div class="row d-flex flex-row flex-wrap">
+                        <div class="col input-textbox">
+                            <input type="text" id="txtemail" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col">
+                            <div class="btn-submit">
+                                <button type="submit" class="btn btn-success float-right">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section> -->
+    <!--  ========================== End Subscribe me Area ============================  -->
+
+
+</main>
+<!--  ======================= End Main Area ================================ -->
+
+<div id="contact"></div>
+<br/>
+<br/>
+<footer class="footer-area">
+    <div class="container">
+        <div class="">
+            <div class="site-logo text-center py-4">
+                <!-- <a href="#"><img src="img/logo.png" alt="logo"></a> -->
+            </div>
+            <div class="social text-center">
+                <h5 class="text-uppercase">Follow me</h5>
+                <a href="https://www.facebook.com/PharadornB/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/boma_pd/"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/bom2542"><i class="fab fa-github"></i></a>
+                <a href="mailto: b6134228@g.sut.ac.th"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="copyrights text-center">
+                <p class="para">
+                    © 2021 All rights reserved | Ver: 2021-04-17 <br/> Dev by <a
+                        href="https://www.facebook.com/PharadornB/">Pharadorn Boonruam</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<button id="topBtn"><i class="fas fa-arrow-up"></i></button>
 
 <!--    <script>-->
 <!--        window.addEventListener("load", function () {-->
@@ -769,19 +802,20 @@
 <!--                loader.className += " hidden"; // class "loader hidden"-->
 <!--        });-->
 <!--    </script>-->
-    <!--  Jquery js file  -->
-    <script src="js/jquery.3.4.1.js"></script>
-    <!--  Bootstrap js file  -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
-    <!--  isotope js library  -->
-    <script src="/vendor/isotope/isotope.min.js"></script>
-    <!--  Magnific popup script file  -->
-    <script src="vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
-    <!--  Owl-carousel js file  -->
-    <script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
-    <!--  custom js file  -->
-    <script src="js/main.js"></script>
-    <script src="js/script.js"></script>
+<!--  Jquery js file  -->
+<script src="js/jquery.3.4.1.js"></script>
+<!--  Bootstrap js file  -->
+<!-- <script src="js/bootstrap.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+<!--  isotope js library  -->
+<script src="/vendor/isotope/isotope.min.js"></script>
+<!--  Magnific popup script file  -->
+<!--    <script src="vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<!--  Owl-carousel js file  -->
+<script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
+<!--  custom js file  -->
+<script src="js/main.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
