@@ -93,7 +93,7 @@
                 </div>
                 <div class="col-lg-9">
                     <p class="h5 fw-bold text-center">
-                        My name's Mr. Pharadorn Boonruam. My nickname's Bom. I'm 22 years-old.
+                        My name's Mr. Pharadorn Boonruam. My nickname's Bom. I'm <span id="age"></span> years-old.
                     </p>
                     <ul class="mt-2">
                         <li><i class="ri-check-double-line"></i> I was born on 16th, February 1999 C.S.</li>
@@ -769,6 +769,19 @@
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
+
+<script type="text/javascript">
+    let today = new Date();
+    let birthDate = new Date("1999/02/16");
+    let age = today.getFullYear() - birthDate.getFullYear();
+    let m = today.getMonth() - birthDate.getMonth();
+
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+
+    document.getElementById("age").textContent = age;
+</script>
 
 </body>
 
