@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <meta name="description" content='pharadornb.dev Portfolio show profile, certificate, reward and project'>
     <meta name="keywords" content='pharadornb, pharadorn boonruam, pharadornb.dev, pharadorn profile, thai developer,
     thai programmer, software developer, cloud engineer, programmer, software engineer, SUT, IT, enterprise software'>
@@ -20,802 +20,756 @@
     <meta property="og:description" content='pharadornb.dev portfolio show profile, certificate, reward and project'>
     <meta property="og:locale" content='th_TH'>
 
-<!--    <meta name="google-site-verification" content="Jxlk9H3hxvSZxXp9utR6BpwoY7rF3bux4zMXrxtHPG0"/>-->
-<!--    &lt;!&ndash; Google tag (gtag.js) &ndash;&gt;-->
-<!--    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4MXGE9GRPM"></script>-->
-<!--    <script>-->
-<!--        window.dataLayer = window.dataLayer || [];-->
-
-<!--        function gtag() {-->
-<!--            dataLayer.push(arguments);-->
-<!--        }-->
-
-<!--        gtag('js', new Date());-->
-
-<!--        gtag('config', 'G-4MXGE9GRPM');-->
-<!--    </script>-->
-
     <title>[ :: pharadornb.dev :: ]</title>
 
+    <link href="assets/img/logos/pharadornb.png" rel="icon">
+    <link href="assets/img/logos/pharadornb.png" rel="apple-touch-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap" rel="stylesheet">
-
-    <!--  Bootstrap css file  -->
-    <!--  <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-    <!--  font awesome icons  -->
-    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <!--  Magnific Popup css file  -->
-    <!--    <link rel="stylesheet" href="vendor/Magnific-Popup/dist/magnific-popup.css">-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
-    <!--  Owl-carousel css file  -->
-    <link rel="stylesheet" href="vendor/owl-carousel/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendor/owl-carousel/css/owl.theme.default.min.css">
-    <!--  custom css file  -->
-    <link rel="stylesheet" href="css/style.css">
-    <!--  Responsive css file  -->
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- icon title file -->
-    <link rel="icon" href="img/icon.png" type="image/x-icon">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <style>
-
-        #logo-dev {
-            font: normal 500 15px/25px;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        #bigbig {
-            font-size: 100px;
-        }
-
-        @media only screen and (max-width: 375px) {
-            #title-name {
-                font-size: 50px;
-            }
-
-            #title-name2 {
-                font-size: 20px;
-            }
-
-            #resume1 {
-                margin-top: 10px;
-            }
-
-            #pink {
-                font-size: 28px;
-            }
-        }
-
-
-        body, .sweet-alert {
-            font-family: 'Kanit', sans-serif;
-        }
-
-        .loader {
-            position: fixed;
-            z-index: 99;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .loader > img {
-            width: 100px;
-        }
-
-        .loader.hidden {
-            animation: fadeOut 1s;
-            animation-fill-mode: forwards;
-        }
-
-        @keyframes fadeOut {
-            100% {
-                opacity: 0;
-                visibility: hidden;
-            }
-        }
-
-        .thumb {
-            height: 100px;
-            border: 1px solid black;
-            margin: 10px;
-        }
-
-    </style>
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<body id="body-pd">
+<body>
 
-<!--    <div class="loader">-->
-<!--        <img src="img/loader.gif" />-->
-<!--    </div>-->
-
-<!--  ======================= Start Header Area ============================== -->
-<header class="header_area">
-    <div class="main-menu">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <!--                <a class="navbar-brand" href="#"><img src="img/logo2.png" alt="logo"></a>-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="mr-auto"></div>
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><i class="fas fa-home"></i> Home<span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">INTRODUCE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skill">TECHNICAL</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#activities">Activities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">contact</a>
-                    </li>
-
-                </ul>
-            </div>
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+        <h1 class="logo me-auto"><a href="index.html">[ :: pharadornb.dev :: ]</a></h1>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto active" href="#hero">HOME</a></li>
+                <li><a class="nav-link scrollto" href="#about">INTRODUCE</a></li>
+                <li><a class="nav-link scrollto" href="#clients">SKILLS</a></li>
+                <li><a class="nav-link scrollto" href="#portfolio">ACTIVITIES</a></li>
+                <li><a class="nav-link scrollto" href="#faq">TIMELINE</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
     </div>
 </header>
-<!--  ======================= End Header Area ============================== -->
 
-<!--  ======================= Start Main Area ================================ -->
-<main class="site-main">
-
-    <!--  ======================= Start Banner Area =======================  -->
-    <section class="site-banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 site-title">
-                    <h3 class="title-text">I am</h3>
-                    <h1 class="title-text text-uppercase" id="title-name">PHARADORN</h1>
-                    <h1 class="title-text text-uppercase" id="title-name">BOONRUAM</h1>
-                    <h4 class="title-text text-uppercase" id="title-name2">INFORMATION TECHNOLOGY(ES)</h4>
-                    <div class="site-buttons">
-                        <div class="d-flex flex-row flex-wrap mt-3">
-                            <a href="#about">
-                                <button type="button" class="btn button primary-button mr-4 text-uppercase">READ MORE
-                                </button>
-                            </a>
-                            <!-- <a id="resume1" href="PharadornBoonruam-Resume.pdf" target="_blank"><button type="button" class="btn button secondary-button text-uppercase"><i class="fas fa-file-pdf"></i> GET RESUME</button></a> -->
-                        </div>
-                    </div>
+<section id="hero" class="d-flex align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+                 data-aos="fade-up" data-aos-delay="200">
+                <h1>PHARADORN BOONRUAM (BOM)</h1>
+                <h2>Software & Cloud Engineer</h2>
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                    <a href="https://bit.ly/pharadornb2024" target="_blank"
+                       class="btn-get-started scrollto">Get Resume</a>
+                    <a href="https://youtu.be/qD1DqY77YTY" class="glightbox btn-watch-video"><i
+                            class="bi bi-play-circle"></i><span>Watch Video</span></a>
                 </div>
-                <div class="col-lg-6 col-md-12 banner-image">
-                    <img src="img/banner/banner-image.png" alt="banner-img" class="img-fluid">
+            </div>
+
+            <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+                <img src="assets/img/pharadornb/bom-career.png" alt="bom-career img" class="img-fluid animated">
+            </div>
+        </div>
+    </div>
+</section>
+
+<main id="main">
+
+    <!--    introduce-->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Let me introduce myself</h2>
+            </div>
+
+            <div class="row content">
+                <div class="col-lg-3 pt-4 pt-lg-0 hero-img" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="assets/img/pharadornb/bom-graduated.png" alt="bom-graduated img"
+                         class="img-fluid animated">
+                </div>
+                <div class="col-lg-9">
+                    <p class="h5 fw-bold text-center">
+                        My name's Mr. Pharadorn Boonruam. My nickname's Bom. I'm 22 years-old.
+                    </p>
+                    <ul class="mt-2">
+                        <li><i class="ri-check-double-line"></i> I was born on 16th, February 1999 C.S.</li>
+                        <li><i class="ri-check-double-line"></i> I graduated from B.I.S. Bachelor Of Information Science
+                            ( Enterprise Software Program ) - <span class="text-warning">Class Honors</span>,
+                            School of Information Technology, Institute of Digital Technology
+                            at Suranaree University of Technology, Nakhon Ratchasima, THAILAND
+                        </li>
+                        <li><i class="ri-check-double-line"></i> I’m interest technology of Infrastructure and
+                            Full-stack develop.
+                            In the way of special in order, design handle, maintain,
+                            provide product at the enterprise have high performance & quality product.
+                            <span class="fw-bold">" I ready to learn new stack technology & innovation "</span></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-    <!--  ======================= End Banner Area =======================  -->
 
-    <!--  ========================= About Area ==========================  -->
-    <div id="about"></div>
-    <br/>
-    <br/>
-    <section class="about-area">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 col-md-12">
-                    <div class="about-image">
-                        <img src="img/about-us.png" alt="About us" class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 about-title">
-                    <h2 class="text-uppercase pt-5">
-                        <span>Let me</span>
-                        <span>introduce</span>
-                        <span>myself</span>
-                    </h2>
-                    <div class="paragraph py-4 w-75">
-                        <p class="para">
-                            My name is Mr. Pharadorn Boonruam. My nickname is Bom. I'm 22 year-old. <br/>
-                            I was born on 16th, February 1999 C.S. <br/>
-                            I study at Suranaree University of Techonolgy, Nakhonrachasima, TH <br/>
-                            Information Techonolgy(Enterprise Software) Program, Social Techonolgy School <br/>
-                        </p>
-                        <p class="para">
-                            I’m interested in the position of <b>"Software Developer"</b> in the way of specializing in
-                            order
-                            to handle and produce software project at the enterprise level of organization and consult
-                        </p>
-                    </div>
-                    <a href="ResumePharadornV1.1.pdf" target="_blank">
-                        <button type="button" class="btn button primary-button text-uppercase"><i
-                                class="fas fa-file-pdf"></i> GET RESUME
-                        </button>
+    <!--    skills-->
+    <section id="clients" class="clients section-bg">
+        <div class="container">
+
+            <div class="section-title mt-3" data-aos="zoom-in">
+                <h2>Technical Skills</h2>
+            </div>
+
+            <div class="row" data-aos="zoom-in">
+
+                <!--                Microsoft Azure-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferrer">
+                        <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg"
+                             alt="azure" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="Microsoft Azure"/>
                     </a>
                 </div>
+
+                <!--                Docker Container-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://www.docker.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg"
+                             alt="docker" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="Docker Container"/>
+                    </a>
+                </div>
+
+                <!--                Linux OS-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg"
+                             alt="linux" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="Linux OS"/>
+                    </a>
+                </div>
+
+                <!--                Git-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg"
+                             alt="Git" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="Git"/>
+                    </a>
+                </div>
+
+                <!--                Angular-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://angular.io/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/angularjs-colored.svg"
+                             alt="Angular" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="Angular"/>
+                    </a>
+                </div>
+
+                <!--                React & React Native-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg"
+                             alt="React" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="React & React Native"/>
+                    </a>
+                </div>
+
+                <!--                Java-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://www.oracle.com/java/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg"
+                             alt="Java" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="Java"/>
+                    </a>
+                </div>
+
+                <!--                JavaScript-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg"
+                             alt="JavaScript" class="img-fluid" width="100px" data-toggle="tooltip"
+                             data-placement="bottom" title="JavaScript"/>
+                    </a>
+                </div>
+
+                <!--                PHP-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://www.php.net/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/php-colored.svg"
+                             alt="PHP" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="PHP"/>
+                    </a>
+                </div>
+
+                <!--                Python-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://www.python.org/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg"
+                             alt="Python" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="Python"/>
+                    </a>
+                </div>
+
+                <!--                TypeScript-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg"
+                             alt="TypeScript" class="img-fluid" width="100px" data-toggle="tooltip"
+                             data-placement="bottom" title="TypeScript"/>
+                    </a>
+                </div>
+
+                <!--                HTML5-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg"
+                             alt="HTML5" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="HTML5"/>
+                    </a>
+                </div>
+
+                <!--                NextJs-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://nextjs.org/docs" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored.svg"
+                             alt="NextJs" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="NextJs"/>
+                    </a>
+                </div>
+
+                <!--                CSS3-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg"
+                             alt="CSS3" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="CSS3"/>
+                    </a>
+                </div>
+
+                <!--                Sass & Scss-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://sass-lang.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/sass-colored.svg"
+                             alt="Sass & Scss" class="img-fluid" width="100px" data-toggle="tooltip"
+                             data-placement="bottom"
+                             title="Sass & Scss"/>
+                    </a>
+                </div>
+
+                <!--                Bootstrap 5-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/bootstrap-colored.svg"
+                             alt="Bootstrap 5" class="img-fluid" width="100px" data-toggle="tooltip"
+                             data-placement="bottom" title="Bootstrap 5"/>
+                    </a>
+                </div>
+
+                <!--                Material UI-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://mui.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/materialui-colored.svg"
+                             alt="Material UI" class="img-fluid" width="100px" data-toggle="tooltip"
+                             data-placement="bottom" title="Material UI"/>
+                    </a>
+                </div>
+
+                <!--                JQuery-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://jquery.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/jquery-colored.svg"
+                             alt="JQuery" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="JQuery"/>
+                    </a>
+                </div>
+
+                <!--                NodeJS-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg"
+                             alt="NodeJS" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="NodeJS"/>
+                    </a>
+                </div>
+
+                <!--                Express-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://expressjs.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/express-colored.svg"
+                             alt="Express" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="Express"/>
+                    </a>
+                </div>
+
+                <!--                MySQL-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg"
+                             alt="MySQL" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="MySQL"/>
+                    </a>
+                </div>
+
+                <!--                Oracle-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://www.oracle.com/uk/index.html" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/oracle-colored.svg"
+                             alt="Oracle" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="Oracle"/>
+                    </a>
+                </div>
+
+                <!--                ASP.NET & CORE-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://dotnet.microsoft.com/en-us/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/dot-net-colored.svg"
+                             alt="ASP.NET & CORE" class="img-fluid" width="100px" data-toggle="tooltip"
+                             data-placement="bottom" title="ASP.NET & CORE"/>
+                    </a>
+                </div>
+
+                <!--                Adobe Photoshop-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://www.adobe.com/uk/products/photoshop.html" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/photoshop-colored.svg"
+                             alt="Adobe Photoshop" class="img-fluid" width="100px" data-toggle="tooltip"
+                             data-placement="bottom" title="Adobe Photoshop"/>
+                    </a>
+                </div>
+
+                <!--                Adobe XD-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://www.adobe.com/uk/products/xd.html" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/xd-colored.svg"
+                             alt="Adobe XD" class="img-fluid" width="100px" data-toggle="tooltip"
+                             data-placement="bottom" title="Adobe XD"/>
+                    </a>
+                </div>
+
+                <!--                Figma-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://www.figma.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg"
+                             alt="Figma UX/UI" class="img-fluid" width="100px" data-toggle="tooltip"
+                             data-placement="bottom" title="Figma UX/UI"/>
+                    </a>
+                </div>
+
+                <!--                Amazon AWS-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://aws.amazon.com" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                             alt="aws" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="Amazon AWS"/>
+                    </a>
+                </div>
+
+                <!--                ChartJS-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://www.chartjs.org" target="_blank" rel="noreferrer">
+                        <img src="https://www.chartjs.org/media/logo-title.svg"
+                             alt="ChartJS" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="Chart.js"/>
+                    </a>
+                </div>
+
+                <!--                Google Firebase-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://firebase.google.com/" target="_blank" rel="noreferrer">
+                        <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"
+                             alt="google firebase" class="img-fluid" width="100px" data-toggle="tooltip"
+                             data-placement="bottom" title="Google Firebase"/>
+                    </a>
+                </div>
+
+                <!--                Postman Call API-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://postman.com" target="_blank" rel="noreferrer">
+                        <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"
+                             alt="postman" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="Postman Call API"/>
+                    </a>
+                </div>
+
+                <!--                Java Spring Framework-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://spring.io/" target="_blank" rel="noreferrer">
+                        <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg"
+                             alt="spring" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="Java Spring"/>
+                    </a>
+                </div>
+
+                <!--                Arduino-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer">
+                        <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg"
+                             alt="arduino" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="Arduino"/>
+                    </a>
+                </div>
+
+                <!--                C-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/c-colored.svg"
+                             alt="C" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="C"/>
+                    </a>
+                </div>
+
+                <!--                C++-->
+                <div class="col-lg-2 col-3 d-flex align-items-center justify-content-center">
+                    <a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/cplusplus-colored.svg"
+                             alt="C++" class="img-fluid" width="100px" data-toggle="tooltip" data-placement="bottom"
+                             title="C++"/>
+                    </a>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!--  ========================= End About Area ==========================  -->
+    <!--    activities-->
+    <section id="portfolio" class="portfolio">
+        <div class="container" data-aos="fade-up">
 
-    <!--  ====================== Start Services Area =============================  -->
-    <!-- <div id="hobby"></div>
-    <br/>
-    <br/>
-    <br/>
-    <section class="services-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center services-title">
-                    <h1 class="text-uppercase title-text">My Hobby</h1>
-                </div>
+            <div class="section-title">
+                <h2>HIGHLIGHT ACTIVITIES</h2>
             </div>
-            <center><div class="container services-list" id="wow">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="services">
-                            <div class="sevices-img text-center py-4">
-                                <img src="img/services/s5.png" alt="Services-1">
-                            </div>
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-uppercase font-roboto">Travel</h5>
-                            </div>
-                        </div>
+
+            <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <li data-filter="*" class="filter-active">ALL</li>
+                <li data-filter=".filter-proj">PROJECTS</li>
+                <li data-filter=".filter-cert">CERTIFICATED</li>
+            </ul>
+
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+                <!--                itsc-->
+                <div class="col-lg-4 col-md-6 portfolio-item filter-proj">
+                    <div class="portfolio-img">
+                        <img src="assets/img/projects/itsc.png" class="img-fluid" alt="">
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="services">
-                            <div class="sevices-img text-center py-4">
-                                <img src="img/services/s6.png" alt="Services-2">
-                            </div>
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-uppercase font-roboto">Find a NewTech</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="services">
-                            <div class="sevices-img text-center py-4">
-                                <img src="img/services/s7.png" alt="Services-3">
-                            </div>
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-uppercase font-roboto">Repair Machine</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="services">
-                            <div class="sevices-img text-center py-4">
-                                <img src="img/services/s8.png" alt="Services-4">
-                            </div>
-                            <div class="card-body text-center">
-                                <h5 class="card-title text-uppercase font-roboto">Coding</h5>
-                            </div>
-                        </div>
+                    <div class="portfolio-info">
+                        <h4>Information Technology Skill Collect</h4>
+                        <p>Collect skill for career in the future.</p>
+                        <a href="assets/img/projects/itsc.png" data-gallery="portfolioGallery"
+                           class="portfolio-lightbox preview-link"><i class="bx bx-detail"></i></a>
+                        <a href="https://github.com/pharadornb/itsc-senior_webapp.git" target="_blank"
+                           class="details-link" title="Url">
+                            <i class="bx bx-link"></i></a>
                     </div>
                 </div>
-            </div></center>
-        </div>
-    </section> -->
 
-    <!--  ====================== End Services Area =============================  -->
-
-    <!--  ======================== Brand Area ==============================  -->
-
-    <div id="skill"></div>
-    <section class="about-area">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12">
-                    <div class="about-title" id="her">
-                        <h1 class="text-uppercase title-h1">TECHNICAL</h1>
+                <!--                cross-->
+                <div class="col-lg-4 col-md-6 portfolio-item filter-proj">
+                    <div class="portfolio-img">
+                        <img src="assets/img/projects/tp_cross.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Travel Planing Cross Application</h4>
+                        <p>Checkin-out of traveling in list.</p>
+                        <a href="assets/img/projects/tp_cross.png" data-gallery="portfolioGallery"
+                           class="portfolio-lightbox preview-link"><i class="bx bx-detail"></i></a>
+                        <a href="https://github.com/pharadornb/travelplan-mobileapp" target="_blank"
+                           class="details-link" title="Url">
+                            <i class="bx bx-link"></i></a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="brand-area">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-6 col-lg-12 col-md-12">
-                    <div class="first-row row">
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="single-brand">
-                                <img src="img/brands/logo11.png" alt="Brand-1 ">
-                                <br/>
-                                <h6 id="logo-dev">Control Version</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="single-brand">
-                                <img src="img/brands/logo12.png" alt="Brand-2 ">
-                                <br/>
-                                <h6 id="logo-dev">Object-Oriented</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="single-brand">
-                                <img src="img/brands/logo13.png" alt="Brand-3 ">
-                                <h6 id="logo-dev">Font-end Web</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="single-brand">
-                                <img src="img/brands/logo14.png" alt="Brand-4">
-                                <h6 id="logo-dev">Back-end Web</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="single-brand">
-                                <img src="img/brands/logo15.png" alt="Brand-5 ">
-                                <h6 id="logo-dev">Database</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="single-brand">
-                                <img src="img/brands/logo16.png" alt="Brand-6">
-                                <h6 id="logo-dev">Mobile+Cross App</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="single-brand">
-                                <img src="img/brands/logo17.png" alt="Brand-7 ">
-                                <h6 id="logo-dev">IoT, Linux & Network</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="single-brand">
-                                <img src="img/brands/logo18.png" alt="Brand-8 ">
-                                <h6 id="logo-dev">Basic Programing</h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="single-brand">
-                                <img src="img/brands/logo19.png" alt="Brand-9">
-                                <h6 id="logo-dev">.Net Framework</h6>
-                            </div>
-                        </div>
+                <!--                web-->
+                <div class="col-lg-4 col-md-6 portfolio-item filter-proj">
+                    <div class="portfolio-img">
+                        <img src="assets/img/projects/tp_web.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Travel Planing Web Application</h4>
+                        <p>Post traveling in list.</p>
+                        <a href="assets/img/projects/tp_web.png" data-gallery="portfolioGallery"
+                           class="portfolio-lightbox preview-link"><i class="bx bx-detail"></i></a>
+                        <a href="https://github.com/pharadornb/travelplan-webapp" target="_blank"
+                           class="details-link" title="Url">
+                            <i class="bx bx-link"></i></a>
                     </div>
                 </div>
-                <div class="col-xl-6 col-lg-12 col-md-12">
-                    <div class="experience-area">
-                        <div class="d-flex flex-row years-area">
-                            <h2 class="p-3 years" id="bigbig">I</h2>
-                            <h2>
-                                <br/>
-                                <span>Love</span>
-                                <span>Software</span>
-                                <br/>
-                            </h2>
-                        </div>
-                        <!-- <div class="d-flex flex-row flex-wrap call-area">
-                            <span><i class="fas fa-phone-alt fa-3x px-3"></i></span>
-                            <div class="call-now">
-                                <a href="#" class="text-uppercase h4 font-roboto">Call Now</a>
-                                <span class="font-roboto py-2">(+91)-800-555-4986</span>
-                            </div>
-                        </div> -->
-                        <!-- <div class="bg-panel"></div> -->
+
+                <!--                android-->
+                <div class="col-lg-4 col-md-6 portfolio-item filter-proj">
+                    <div class="portfolio-img">
+                        <img src="assets/img/projects/tp_app.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Travel Planing Android Application</h4>
+                        <p>travel place in list.</p>
+                        <a href="assets/img/projects/tp_app.png" data-gallery="portfolioGallery"
+                           class="portfolio-lightbox preview-link"><i class="bx bx-detail"></i></a>
+                        <a href="https://github.com/pharadornb/travelplan-androidapp" target="_blank"
+                           class="details-link" title="Url">
+                            <i class="bx bx-link"></i></a>
+                    </div>
+                </div>
+
+                <!--                semantic-->
+                <div class="col-lg-4 col-md-6 portfolio-item filter-proj">
+                    <div class="portfolio-img">
+                        <img src="assets/img/projects/tr_semantic.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Thai Rice Web Semantic</h4>
+                        <p>thai rice in list and retrieve</p>
+                        <a href="assets/img/projects/tr_semantic.png" data-gallery="portfolioGallery"
+                           class="portfolio-lightbox preview-link"><i class="bx bx-detail"></i></a>
+                        <a href="https://github.com/pharadornb/thairice-web3" target="_blank"
+                           class="details-link" title="Url">
+                            <i class="bx bx-link"></i></a>
+                    </div>
+                </div>
+
+                <!--                lrt-->
+                <div class="col-lg-4 col-md-6 portfolio-item filter-proj">
+                    <div class="portfolio-img">
+                        <img src="assets/img/projects/koratlrt.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Korat LRT Desktop Application</h4>
+                        <p>buy ticket and select station kiosk.</p>
+                        <a href="assets/img/projects/koratlrt.png" data-gallery="portfolioGallery"
+                           class="portfolio-lightbox preview-link"><i class="bx bx-detail"></i></a>
+                        <a href="https://github.com/pharadornb/koratlrt-desktopapp" target="_blank"
+                           class="details-link" title="Url">
+                            <i class="bx bx-link"></i></a>
+                    </div>
+                </div>
+
+                <!--                archivement-->
+                <div class="col-lg-4 col-md-6 portfolio-item filter-cert">
+                    <div class="portfolio-img">
+                        <img src="assets/img/certificated/archive.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Certificated For Achievement</h4>
+                        <a href="assets/img/certificated/archive.png" data-gallery="portfolioGallery"
+                           class="portfolio-lightbox preview-link"><i class="bx bx-detail"></i></a>
+                        <a href="" target="_blank"
+                           class="details-link" title="Url">
+                            <i class="bx bx-link"></i></a>
+                    </div>
+                </div>
+
+                <!--                upskill01-->
+                <div class="col-lg-4 col-md-6 portfolio-item filter-cert">
+                    <div class="portfolio-img">
+                        <img src="assets/img/certificated/upskill01.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Certificated For Upskill/Reskill</h4>
+                        <a href="assets/img/certificated/upskill01.png" data-gallery="portfolioGallery"
+                           class="portfolio-lightbox preview-link"><i class="bx bx-detail"></i></a>
+                        <a href="" target="_blank"
+                           class="details-link" title="Url">
+                            <i class="bx bx-link"></i></a>
+                    </div>
+                </div>
+
+                <!--                upskill02-->
+                <div class="col-lg-4 col-md-6 portfolio-item filter-cert">
+                    <div class="portfolio-img">
+                        <img src="assets/img/certificated/upskill02.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Certificated For Upskill/Reskill</h4>
+                        <a href="assets/img/certificated/upskill02.png" data-gallery="portfolioGallery"
+                           class="portfolio-lightbox preview-link"><i class="bx bx-detail"></i></a>
+                        <a href="" target="_blank"
+                           class="details-link" title="Url">
+                            <i class="bx bx-link"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!--  ======================== End Brand Area ==============================  -->
+    <!--    timeline-->
+    <section id="faq" class="faq section-bg">
+        <div class="container" data-aos="fade-up">
 
-    <!--  ======================= Project Area =============================  -->
-    <div id="activities"></div>
-    <section class="project-area">
-        <div class="container">
-            <div class="project-title pb-5">
-                <h1 class="text-uppercase title-h1" id="pink"><br/><br/>Recently Done Activity</h1>
+            <div class="section-title">
+                <h2>EXPERIENCE & TIMELINE</h2>
             </div>
 
+            <div class="faq-list">
+                <ul>
+                    <!--                    fahos-->
+                    <li data-aos="fade-up" data-aos-delay="100">
+                        <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-fahos">
+                            <img src="assets/img/logos/fahos.png" alt="fahos logo" height="50px">&nbsp;AUG 2023 – NOV
+                            2023 (4 Month)
+                            <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-fahos" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                <b>Position Description : </b>Information Officer, Full time at Fort Adison Hospital,
+                                Saraburi. THAILAND
+                            <hr>
+                            <b>Activities and societies : </b> health checkup for military person project, backup server
+                            sync, adv. php, bootstrap, Ajax, Landing page - react, Apache static page, web application,
+                            Landing page, consult IT solution for transform, PC, Server and network, Printer Solve
+                            </p>
+                        </div>
+                    </li>
 
-            <div class="button-group mt-1">
-                <button type="button" id="btn btn-fill" class="btn btn-primaryactive" data-filter="*"
-                        style="color: blue;"><i class="fas fa-filter"></i> SHOW All
-                </button>
-                <button type="button" data-filter=".project" style="color: green;">project</button>
-                <button type="button" data-filter=".experience" style="color: green;">Experience</button>
-                <button type="button" data-filter=".extracurricular" style="color: green;">Activity</button>
+                    <!--                    gable-->
+                    <li data-aos="fade-up" data-aos-delay="200">
+                        <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-gable">
+                            <img src="assets/img/logos/gable.jpg" alt="gable logo" height="50px">&nbsp;MAR 2022 – MAY
+                            2023 (15 Month)
+                            <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-gable" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                <b>Position Description : </b>Software developer, Full time at G-Able Public Company
+                                Limited, Yannawa, Bangkok. THAILAND
+                            <hr>
+                            <b>Activities and societies : </b> IVR - Interactive Voice Response MA Contract state
+                            support on Web portal, ASP.NET Web Form (.aspx), Store Procedure, Batch Script,
+                            Windows Server, Sql Server, RDP, SAP Crystal Designer Report, B2B Customer Portal Web DEV
+                            Contract state,
+                            ASP.NET C# Web Application Framework, Vue script, EF, ADO.NET, ASP.NET MVC C# Web api,
+                            Budget Management, SAP error, Manage machine on cloud server script automation, YAML,
+                            Angular,
+                            Ansible AWX, OS Catalogs such as Windows server, RedHat etc. Azure subscriptions, Docker,
+                            Nginx for web service and reverse Proxy, Agile standard, Billing Summary
+                            </p>
+                        </div>
+                    </li>
+
+                    <!--                    prior-->
+                    <li data-aos="fade-up" data-aos-delay="300">
+                        <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-prior">
+                            <img src="assets/img/logos/prior.jpg" alt="fahos logo" height="50px">&nbsp;JUL 2021 – NOV
+                            2021 (4 Month)
+                            <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-prior" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                <b>Position Description : </b>Java developer, Cooperative education at
+                                Prior Solution Company Limited, Bangsue, Bangkok. THAILAND
+                            <hr>
+                            <b>Activities and societies : </b> Web Game, Programing project challenge, Angular,
+                            Material UI, PrimiNG, Upgrade I’AM manage role in company system, React, MUI, UI Custom
+                            </p>
+                        </div>
+                    </li>
+
+                    <!--                    rspg-->
+                    <li data-aos="fade-up" data-aos-delay="400">
+                        <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-rspg">
+                            <img src="assets/img/logos/rspg.png" alt="fahos logo" height="50px">&nbsp;DEC 2020 – APR
+                            2021 (4 Month)
+                            <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-rspg" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                <b>Position Description : </b>Student parttime at
+                                RSPG at Surauniversity, Nakhonrachasima. THAILAND
+                            <hr>
+                            <b>Activities and societies : </b> Budget management system, Web application based on PHP
+                            </p>
+                        </div>
+                    </li>
+
+                    <!--                    sut-->
+                    <li data-aos="fade-up" data-aos-delay="500">
+                        <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-sut">
+                            <img src="assets/img/logos/sut.jpg" alt="sut logo" height="50px">&nbsp;MAY 2018 - MARCH 2022
+                            (176 Credits)
+                            <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-sut" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                <b>Student at : </b> Suranaree University of Technology, Nakhon Ratchasima, THAILAND,
+                                Institute of Social Technology, School of Information Technology,
+                                B.I.S. Bachelor Of Information Science Enterprise Software Program -
+                                <span class="text-warning">Class Honors</span> (176 Credits)
+                            <hr>
+                            <b>Activities and societies : </b> Senior project "Infomation Skill Technical", React,
+                            Express NodeJS, MUI, Docker, Azure App service, Azure MySQL, Study project “Travel plan”,
+                            Cross Platform Mobile - React Native, Firebase, For web application PHP, HTML5, Boostrap,
+                            CSS JS, Ajax, jquery, Mysql and Android native application - Andriod, XML, java,
+                            Nakhon Ratchasima LRT Ticket, Java GUI, Thread, OOP, Thai Rice, Sematic Web,
+                            SPARQL, Web3.0, OpenMPI
+                            </p>
+                        </div>
+                    </li>
+
+                    <!--                    pbk-->
+                    <li data-aos="fade-up" data-aos-delay="600">
+                        <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-pbk">
+                            <img src="assets/img/logos/pbk.jpg" alt="pbk logo" height="50px">&nbsp;MAY 2012 - MAY 2022
+                            (Matthayom 1-6)
+                            <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                        <div id="faq-list-pbk" class="collapse" data-bs-parent=".faq-list">
+                            <p>
+                                <b>Student at : </b> Phraibuengwittayakhom School, Big school on district, Si Sa Ket,
+                                High School Diploma (Math - Sci)
+                            <hr>
+                            <b>Activities and societies : </b> Math, Science, English, Computer, Web on Adobe
+                            Dreamweaver, Lego Arduino award, gold medal, 1st place - Microsoft Excel 2010,
+                            Activity in school
+                            </p>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <br/>
 
-            <div class="row grid" id="hidden_content">
-
-                <!-- special project(Dorm) -->
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item project">
-                    <div class="our-project">
-                        <div class="img">
-                            <a class="test-popup-link" href="img/portfolio/p11.jpg">
-                                <img src="img/portfolio/p11.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="title py-4">
-                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> special project</h6>
-                            <h4 class="text-uppercase">Domitory reserve(2019)</h4>
-                            <span class="text-secondary">Domitory reserve for covid-19 project - Java Command, Java Concept, Java UML,</span><br/>
-                            <a href="https://youtu.be/Avgj1mOqYlY"><span class="text-secondary"><i
-                                    class="fab fa-youtube">  </i> OOP WITH JAVA PROJECT | B6134228</span></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- special project(Uniplan) -->
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item project">
-                    <div class="our-project">
-                        <div class="img">
-                            <a class="test-popup-link" href="img/portfolio/p12.jpg">
-                                <img src="img/portfolio/p12.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="title py-4">
-                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> special project</h6>
-                            <h4 class="text-uppercase">Uniplan WEB(2020)</h4>
-                            <span class="text-secondary">Uniplan (University Study Planner) ASP.NET C# MVC</span><br/>
-                            <a href="https://github.com/bom2542/Uniplan2020-WebAppASP.NET"><span class="text-secondary"><i
-                                    class="fab fa-github">  </i> Uniplan2020-WebAppASP.NET</span></a><br/>
-                            <a href="https://youtu.be/BY44aefOK1Q"><span class="text-secondary"><i
-                                    class="fab fa-youtube">  </i> Uniplan Project | Group 3 | 06-11-2563</span></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- special project(KoratLrt) -->
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item project">
-                    <div class="our-project">
-                        <div class="img">
-                            <a class="test-popup-link" href="img/portfolio/p13.jpg">
-                                <img src="img/portfolio/p13.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="title py-4">
-                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> special project</h6>
-                            <h4 class="text-uppercase">KoratLRT SOFTWARE(2020)</h4>
-                            <span class="text-secondary">KoratLRT (Nakhon Ratchasima Light-rail Transportation ticket) - Java GUI</span><br/>
-                            <a href="https://github.com/bom2542/KotatLRT2020-OOPJavaGUI"><span class="text-secondary"><i
-                                    class="fab fa-github">  </i> KotatLRT2020-OOPJavaGUI</span></a><br/>
-                            <a href="https://youtu.be/9qOKr8r8rtI"><span class="text-secondary"><i
-                                    class="fab fa-youtube">  </i> ProjectAdvOOA(01-2563) | Group 1 | IT_SUT</span></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- special project(TravelPlan-Web) -->
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item project">
-                    <div class="our-project">
-                        <div class="img">
-                            <a class="test-popup-link" href="img/portfolio/p14.jpg">
-                                <img src="img/portfolio/p14.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="title py-4">
-                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> special project</h6>
-                            <h4 class="text-uppercase">Travel Plan Web(2021)</h4>
-                            <span class="text-secondary"> Travel Plan WebApp - PHP, HTML5, JS, Jquery, Json, JsObject, Ajax</span><br/>
-                            <a href="http://pharadorn.lnw.mn/TravelPlan/"><span class="text-secondary"><i
-                                    class="fab fa-chrome">  </i> pharadorn.lnw.mn/TravelPlan/</span></a><br/>
-                            <a href="https://github.com/bom2542/TravelPlan2021-WebAppScript"><span
-                                    class="text-secondary"><i
-                                    class="fab fa-github">  </i> TravelPlan2021-WebAppScript</span></a><br/>
-                            <a href="https://youtu.be/V24NELusz1Y"><span class="text-secondary"><i
-                                    class="fab fa-youtube">  </i> Travel Plan System | G02 | Script | 24-FEB-2021</span></a>
-                        </div>
-                    </div>
-                </div>
-                <!-- special project(TravelPlan-Mobile) -->
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item project">
-                    <div class="our-project">
-                        <div class="img">
-                            <a class="test-popup-link" href="img/portfolio/p15.jpg">
-                                <img src="img/portfolio/p15.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="title py-4">
-                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> special project</h6>
-                            <h4 class="text-uppercase">Travel Plan Mobile(2021)</h4>
-                            <span class="text-secondary">  Travel Plan MobileApp - Android, Java, Json API, Location based service, phpmyadmin</span><br/>
-                            <a href="https://github.com/bom2542/TravelPlanApp2021-MobileAppAndroid"><span
-                                    class="text-secondary"><i class="fab fa-github">  </i> TravelPlanApp2021-MobileAppAndroid</span></a><br/>
-                            <a href="https://youtu.be/wKF08OI6O7g"><span class="text-secondary"><i
-                                    class="fab fa-youtube">  </i> Phishing Project MobileApp | 28/12/2563</span></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- W o r k   E x p e r i n c e -->
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item project experience">
-                    <div class="our-project">
-                        <div class="img">
-                            <a class="test-popup-link" href="img/portfolio/p21.jpg">
-                                <img src="img/portfolio/p21.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="title py-4">
-                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> special project, experience</h6>
-                            <h4 class="text-uppercase">DEC - APR 2021</h4>
-                            <span class="text-secondary">  Developed the system of RSPG-SUT (Plant Genetic Conservation Project Under the Royal Initiation of Her Royal Highness Princess Maha Chakri Sirindhorn) management Suranaree University of Technology, Technothani, Part-time student(Project manager and development)</span><br/>
-                            <a href="http://student.sut.ac.th/b6134228/RspgBudget2563/"><span class="text-secondary"><i
-                                    class="fab fa-chrome">  </i> /b6134228/RspgBudget2563/</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item experience">
-                    <div class="our-project">
-                        <div class="img">
-                            <a class="test-popup-link" href="img/portfolio/p22.jpg">
-                                <img src="img/portfolio/p22.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="title py-4">
-                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> experience</h6>
-                            <h4 class="text-uppercase">APR - JUL 2018</h4>
-                            <span class="text-secondary">  Worked at Tesco Lotus express(Toedprakiat Rd.), Bangkruai, Nonthaburi, Part-time</span><br/>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- extracurricular -->
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item extracurricular">
-                    <div class="our-project">
-                        <div class="img">
-                            <a class="test-popup-link" href="img/portfolio/p31.jpg">
-                                <img src="img/portfolio/p31.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="title py-4">
-                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> extracurricular</h6>
-                            <h4 class="text-uppercase">Introduce camp(2018)</h4>
-                            <span class="text-secondary">  Senior meet with juniors for Introduce University Camp 1 -2. I'm staff., Pharaibuengwittayakom School, Si Sa Ket, (2018, 2019)</span><br/>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item extracurricular">
-                    <div class="our-project">
-                        <div class="img">
-                            <a class="test-popup-link" href="img/portfolio/p32.jpg">
-                                <img src="img/portfolio/p32.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="title py-4">
-                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> extracurricular</h6>
-                            <h4 class="text-uppercase">IoT camp(2019)</h4>
-                            <span class="text-secondary">  IoT Camp, Thai Programmer, Kx Building KMUTT, Bangkok, (2019)</span><br/>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item extracurricular">
-                    <div class="our-project">
-                        <div class="img">
-                            <a class="test-popup-link" href="img/portfolio/p33.jpg">
-                                <img src="img/portfolio/p33.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="title py-4">
-                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> extracurricular</h6>
-                            <h4 class="text-uppercase">Ai career(2019)</h4>
-                            <span class="text-secondary">  Introduce of career about artificial Intelligence, AiAT(Ai association of Thailand), Online, (2019)</span><br/>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item extracurricular">
-                    <div class="our-project">
-                        <div class="img">
-                            <a class="test-popup-link" href="img/portfolio/p34.jpg">
-                                <img src="img/portfolio/p34.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="title py-4">
-                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> extracurricular</h6>
-                            <h4 class="text-uppercase">Dev ops(2020)</h4>
-                            <span class="text-secondary">  Dev ops by panupong Junklang(Docker, GitLab for Oganization), Lab com SUT, (2020)</span><br/>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 element-item extracurricular">
-                    <div class="our-project">
-                        <div class="img">
-                            <a class="test-popup-link" href="img/portfolio/p35.jpg">
-                                <img src="img/portfolio/p35.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                        <div class="title py-4">
-                            <h6 class="btn-primaty mb-2"><i class="fas fa-tag"></i> extracurricular</h6>
-                            <h4 class="text-uppercase">Bootcamp FSI(2021)</h4>
-                            <span class="text-secondary">  Bootcamp FSI(Future Skills Initiative) AI-900 Microsoft Azure AI Fundamentals, Iverson x Microsoft: Skills for the future, Digital-Courseware, (2021)</span><br/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         </div>
     </section>
-
-    <!--  ======================= End Project Area =============================  -->
-
-    <!--  ======================== About Me Area ==============================  -->
-    <div id="education"></div>
-    <br/>
-    <br/>
-    <section class="about-area">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12">
-                    <div class="about-title">
-                        <h1 class="text-uppercase title-h1" id="pink">Education</h1>
-                        <!-- <p class="para">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus, deleniti
-                            recusandae. Esse incidunt rem repellendus ab voluptates maxime? Nemo, numquam!
-                        </p> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container carousel py-lg-5">
-            <div class="owl-carousel owl-theme">
-                <div class="client row">
-                    <div class="col-lg-4 col-md-12 client-img">
-                        <img src="img/testimonials/t5.jpg" alt="img1" class="img-fluid">
-                    </div>
-                    <div class="col-lg-8 col-md-12 about-client">
-                        <h4 class="text-uppercase">2018 - 2022</h4>
-                        <p class="para">Suranaree University of Technology, Nakhon Ratchasima B.I.S. in Information
-                            Technology (Enterprise Software), Expected graduation November 2022</p>
-                    </div>
-                </div>
-
-                <div class="client row">
-                    <div class="col-lg-4 col-md-12 client-img">
-                        <img src="img/testimonials/t4.jpg" alt="img2" class="img-fluid">
-                    </div>
-                    <div class="col-lg-8 col-md-12 about-client">
-                        <h4 class="text-uppercase">2017 - 2012</h4>
-                        <p class="para">Phraibuengwittayakhom School, Si Sa Ket, High School Diaploma</p>
-                    </div>
-                </div>
-
-                <div class="client row">
-                    <div class="col-lg-4 col-md-12 client-img">
-                        <img src="img/testimonials/t3.jpg" alt="img1" class="img-fluid">
-                    </div>
-                    <div class="col-lg-8 col-md-12 about-client">
-                        <h4 class="text-uppercase">2016 - 2011</h4>
-                        <p class="para">Anubanphraibueng School, Si Sa Ket, Primary School Diaploma</p>
-                    </div>
-                </div>
-                <!-- <div class="client row">
-                    <div class="col-lg-4 col-md-12 client-img">
-                        <img src="img/testimonials/t2.jpg" alt="img2" class="img-fluid">
-                    </div>
-                    <div class="col-lg-8 col-md-12 about-client">
-                        <h4 class="text-uppercase">Mac Hill</h4>
-                        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
-                            consequuntur ratione, obcaecati corrupti deserunt.</p>
-                    </div>
-                </div> -->
-                <!-- <div class="client row">
-                    <div class="col-lg-4 col-md-12 client-img">
-                        <img src="img/testimonials/t1.jpg" alt="img1" class="img-fluid">
-                    </div>
-                    <div class="col-lg-8 col-md-12 about-client">
-                        <h4 class="text-uppercase">John Martin</h4>
-                        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
-                            consequuntur ratione, obcaecati corrupti deserunt.</p>
-                    </div>
-                </div> -->
-                <!-- <div class="client row">
-                    <div class="col-lg-4 col-md-12 client-img">
-                        <img src="img/testimonials/t2.jpg" alt="img2" class="img-fluid">
-                    </div>
-                    <div class="col-lg-8 col-md-12 about-client">
-                        <h4 class="text-uppercase">Mac Hill</h4>
-                        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem architecto
-                            consequuntur ratione, obcaecati corrupti deserunt.</p>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-
-    </section>
-
-    <!--  ======================== End About Me Area ==============================  -->
-
-    <!--  ========================== Subscribe me Area ============================  -->
-    <!-- <section class="subscribe-us-area">
-        <div class="container subscribe">
-            <div class="row">
-                <div class="col-lg-12 text-center subscribe-title">
-                    <h4 class="text-uppercase">Get Update From anywhere</h4>
-                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-                        consequuntur.</p>
-                </div>
-            </div>
-            <div class="d-sm-flex justify-content-center">
-                <form class="w-50">
-                    <div class="row d-flex flex-row flex-wrap">
-                        <div class="col input-textbox">
-                            <input type="text" id="txtemail" class="form-control" placeholder="Email">
-                        </div>
-                        <div class="col">
-                            <div class="btn-submit">
-                                <button type="submit" class="btn btn-success float-right">Subscribe</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section> -->
-    <!--  ========================== End Subscribe me Area ============================  -->
-
-
 </main>
-<!--  ======================= End Main Area ================================ -->
 
-<div id="contact"></div>
-<br/>
-<br/>
-<footer class="footer-area">
-    <div class="container">
-        <div class="">
-            <div class="site-logo text-center py-4">
-                <!-- <a href="#"><img src="img/logo.png" alt="logo"></a> -->
+<footer id="footer">
+    <div class="container footer-bottom clearfix">
+        <div class="copyright" style="font-size: 14px">
+            &copy; Copyright <strong><span>2024 Pharadorn Boonruam</span></strong>. All Rights Reserved<br/>
+            <div class="mt-2 mb-1">
+                <img src="https://profile-counter.glitch.me/pharadornb/count.svg?"/>
             </div>
-            <div class="social text-center">
-                <h5 class="text-uppercase">Follow me</h5>
-                <a href="https://www.facebook.com/PharadornB/"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/boma_pd/"><i class="fab fa-instagram"></i></a>
-                <a href="https://github.com/bom2542"><i class="fab fa-github"></i></a>
-                <a href="mailto: b6134228@g.sut.ac.th"><i class="fas fa-envelope"></i></a>
-            </div>
-            <div class="copyrights text-center">
-                <p class="para">
-                    © 2021 All rights reserved | Ver: 2021-04-17 <br/> Dev by <a
-                        href="https://www.facebook.com/PharadornB/">Pharadorn Boonruam</a>
-                </p>
-            </div>
+        </div>
+
+
+
+        <div class="credits">
+            <a href="mailto: pharadorn.br@gmail.com" class="email" target="_blank" data-toggle="tooltip"
+               data-placement="bottom" title="Email Contact"><i class="bx bxl-gmail"
+                                                                style="font-size: 24px"></i></a>&nbsp;
+            <a href="https://facebook.com/pharadornb" class="facebook" target="_blank" data-toggle="tooltip"
+               data-placement="bottom" title="Facebook Contact"><i class="bx bxl-facebook"
+                                                                   style="font-size: 24px"></i></a>&nbsp;
+            <a href="https://linkedin.com/in/pharadornb" class="linkedin" target="_blank" data-toggle="tooltip"
+               data-placement="bottom" title="LinkedIn Contact"><i class="bx bxl-linkedin"
+                                                                   style="font-size: 24px"></i></a>&nbsp;
+            <a href="https://github.com/pharadornb" class="github" target="_blank" data-toggle="tooltip"
+               data-placement="bottom" title="GitHub Contact"><i class="bx bxl-github"
+                                                                 style="font-size: 24px"></i></a>
         </div>
     </div>
 </footer>
 
-<button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
 
-<!--    <script>-->
-<!--        window.addEventListener("load", function () {-->
-<!--         const loader = document.querySelector(".loader");-->
-<!--                loader.className += " hidden"; // class "loader hidden"-->
-<!--        });-->
-<!--    </script>-->
-<!--  Jquery js file  -->
-<script src="js/jquery.3.4.1.js"></script>
-<!--  Bootstrap js file  -->
-<!-- <script src="js/bootstrap.min.js"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
-<!--  isotope js library  -->
-<script src="/portfolio/vendorlio/vendor/isotope/isotope.min.js"></script>
-<!--  Magnific popup script file  -->
-<!--    <script src="vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-<!--  Owl-carousel js file  -->
-<script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
-<!--  custom js file  -->
-<script src="js/main.js"></script>
-<script src="js/script.js"></script>
+<!-- Vendor JS Files -->
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
