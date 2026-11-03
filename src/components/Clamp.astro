@@ -1,0 +1,148 @@
+<script>
+  // Long bullets and project descriptions show 3 lines with "…" and expand with a height animation.
+  // Everything here is added by script: with JS off (or when printing) the full text shows.
+  type Item = {
+    box: HTMLElement;
+    btn: HTMLButtonElement;
+    node: HTMLElement; // element that receives .hit from the skills highlight
+    manual: boolean; // opened with the button
+    forced: boolean; // opened because a skill highlight points at it
+    shown: boolean; // currently expanded
+    anim: Animation | null;
+  };
+
+  const DURATION = 340;
+  const EASING = 'cubic-bezier(.2, .7, .2, 1)';
+  const reduceMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const targets = Array.from(
+    document.querySelectorAll<HTMLElement>('.job ul.points > li, .proj dd'),
+  );
+  const items: Item[] = [];
+
+  // clamp only when the text really needs more than 3 lines at the current width
+  function measure(it: Item) {
+    if (it.shown || it.anim) return;
+    it.box.classList.add('is-clamped');
+    const overflows = it.box.scrollHeight - it.box.clientHeight > 1;
+    it.box.classList.toggle('is-clamped', overflows);
+    it.btn.hidden = !overflows;
+  }
+
+  function animateTo(it: Item, open: boolean) {
+    const box = it.box;
+    const from = box.getBoundingClientRect().height; // read before cancelling, so a half-finished animation continues smoothly
+    it.anim?.cancel();
+    it.anim = null;
+
+    let to: number;
+    if (open) {
+      box.classList.remove('is-clamped');
+      to = box.scrollHeight;
+    } else {
+      box.classList.add('is-clamped'); // measure the 3-line height without painting it
+      to = box.getBoundingClientRect().height;
+      box.classList.remove('is-clamped');
+    }
+    it.shown = open;
+
+    const settle = () => {
+      box.style.overflow = '';
+      it.anim = null;
+      if (!open) measure(it); // put the "…" back
+    };
+    if (reduceMotion() || Math.abs(from - to) < 1) {
+      settle();
+      return;
+    }
+    box.style.overflow = 'hidden';
+    const anim = box.animate([{ height: `${from}px` }, { height: `${to}px` }], {
+      duration: DURATION,
+      easing: EASING,
+    });
+    it.anim = anim;
+    anim.onfinish = settle;
+  }
+
+  function sync(it: Item) {
+    const want = it.manual || it.forced;
+    if (want !== it.shown) animateTo(it, want);
+    const label = it.manual ? 'Show less' : 'Show more';
+    it.btn.firstChild && (it.btn.firstChild.textContent = label);
+    it.btn.setAttribute('aria-expanded', String(it.manual));
+  }
+
+  targets.forEach((el) => {
+    const box = document.createElement('div');
+    box.className = 'clamp-text';
+    while (el.firstChild) box.appendChild(el.firstChild);
+    el.appendChild(box);
+
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'more';
+    btn.hidden = true;
+    btn.append(document.createTextNode('Show more'));
+    btn.setAttribute('aria-expanded', 'false');
+    el.appendChild(btn);
+
+    // the highlight class sits on the <li>, or on the .proj row that wraps the <dd>
+    const node = el.matches('dd') ? (el.parentElement as HTMLElement) : el;
+    const it: Item = { box, btn, node, manual: false, forced: false, shown: false, anim: null };
+    btn.addEventListener('click', () => {
+      it.manual = !it.manual;
+      sync(it);
+    });
+    items.push(it);
+  });
+
+  // a skill highlight opens the bullets it points at, and closes them again afterwards
+  const observer = new MutationObserver((records) => {
+    for (const r of records) {
+      const it = items.find((i) => i.node === r.target);
+      if (!it) continue;
+      it.forced = it.node.classList.contains('hit');
+      sync(it);
+    }
+  });
+  new Set(items.map((i) => i.node)).forEach((n) =>
+    observer.observe(n, { attributes: true, attributeFilter: ['class'] }),
+  );
+
+  const bar = document.createElement('div');
+  bar.className = 'toolbar';
+  bar.hidden = true;
+  const all = document.createElement('button');
+  all.type = 'button';
+  all.className = 'more';
+  all.append(document.createTextNode('Expand all'));
+  all.setAttribute('aria-expanded', 'false');
+  bar.appendChild(all);
+  document.querySelector('#work h2')?.after(bar);
+
+  let allOpen = false;
+  all.addEventListener('click', () => {
+    allOpen = !allOpen;
+    items.forEach((it) => {
+      if (!it.btn.hidden) {
+        it.manual = allOpen;
+        sync(it);
+      }
+    });
+    all.firstChild && (all.firstChild.textContent = allOpen ? 'Collapse all' : 'Expand all');
+    all.setAttribute('aria-expanded', String(allOpen));
+  });
+
+  const update = () => {
+    items.forEach(measure);
+    bar.hidden = !items.some((it) => !it.btn.hidden);
+  };
+  update();
+  document.fonts?.ready.then(update);
+
+  let timer: number | undefined;
+  window.addEventListener('resize', () => {
+    window.clearTimeout(timer);
+    timer = window.setTimeout(update, 150);
+  });
+</script>

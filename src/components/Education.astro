@@ -1,0 +1,14 @@
+---
+const { education } = Astro.props;
+---
+<section id="education" class="reveal">
+  <h2>Education</h2>
+  <div class="edu">
+    <div class="edu-head">
+      <h3>{education.title}</h3>
+      <span class="when">{education.period}</span>
+    </div>
+    <p>{education.school}</p>
+    <p>{education.detail}</p>
+  </div>
+</section>

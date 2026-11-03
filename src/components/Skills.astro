@@ -1,0 +1,84 @@
+---
+import Icon from './Icon.astro';
+
+const { skills } = Astro.props;
+const groupIcon: Record<string, string> = {
+  'Programming Languages': 'braces',
+  Frameworks: 'layers',
+  'Cloud & DevOps': 'cloud',
+  Databases: 'database',
+  'Tools & Platforms': 'wrench',
+  Strengths: 'star',
+};
+---
+<section id="skills" class="reveal">
+  <h2>Skills</h2>
+  <dl class="skills">
+    {skills.map((group) => (
+      <div>
+        <dt>{groupIcon[group.label] && <Icon name={groupIcon[group.label]} />}<span>{group.label}</span></dt>
+        <dd>
+          {group.text ?? group.items.map((item, i) => (
+            <>
+              <span class="chip" data-hits={item.hits.length ? item.hits.join(' ') : undefined}>{item.name}</span>{i < group.items.length - 1 && ', '}
+            </>
+          ))}
+        </dd>
+      </div>
+    ))}
+  </dl>
+</section>
+
+<script>
+  // Skills that appear in the experience or projects become interactive: hover, focus or tap
+  // one and the bullets that mention it stay lit while the rest fade.
+  const main = document.querySelector('main');
+  const chips = Array.from(document.querySelectorAll<HTMLElement>('.chip[data-hits]'));
+
+  if (main && chips.length) {
+    const hint = document.createElement('p');
+    hint.className = 'hint';
+    hint.textContent = 'Hover or tap an underlined skill to see where it was used.';
+    document.querySelector('#skills h2')?.after(hint);
+
+    let locked: HTMLElement | null = null;
+
+    const clear = () => {
+      main.classList.remove('skill-focus');
+      document.querySelectorAll('.hit').forEach((el) => el.classList.remove('hit'));
+      chips.forEach((c) => c.classList.remove('on'));
+    };
+    const show = (chip: HTMLElement) => {
+      clear();
+      (chip.dataset.hits ?? '').split(' ').forEach((id) => document.getElementById(id)?.classList.add('hit'));
+      main.classList.add('skill-focus');
+      chip.classList.add('on');
+    };
+    const unlock = () => {
+      locked?.setAttribute('aria-pressed', 'false');
+      locked = null;
+      clear();
+    };
+
+    chips.forEach((chip) => {
+      chip.tabIndex = 0;
+      chip.setAttribute('role', 'button');
+      chip.setAttribute('aria-pressed', 'false');
+      chip.addEventListener('mouseenter', () => { if (!locked) show(chip); });
+      chip.addEventListener('mouseleave', () => { if (!locked) clear(); });
+      chip.addEventListener('focus', () => { if (!locked) show(chip); });
+      chip.addEventListener('blur', () => { if (!locked) clear(); });
+      chip.addEventListener('click', () => {
+        if (locked === chip) { unlock(); return; }
+        locked?.setAttribute('aria-pressed', 'false');
+        locked = chip;
+        chip.setAttribute('aria-pressed', 'true');
+        show(chip);
+      });
+      chip.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); chip.click(); }
+      });
+    });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && locked) unlock(); });
+  }
+</script>

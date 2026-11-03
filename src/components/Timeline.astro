@@ -1,0 +1,46 @@
+---
+const { jobs } = Astro.props;
+
+// "YYYY-MM" -> month index; end === null means "present" (the month of the build)
+const idx = (ym) => {
+  const [y, m] = ym.split('-').map(Number);
+  return y * 12 + (m - 1);
+};
+const now = new Date();
+const nowIdx = now.getFullYear() * 12 + now.getMonth();
+
+const min = Math.min(...jobs.map((j) => idx(j.start)));
+const total = nowIdx - min + 1;
+const pct = (n) => `${((n / total) * 100).toFixed(2)}%`;
+
+const rows = jobs.map((j) => {
+  const s = idx(j.start);
+  const e = j.end ? idx(j.end) : nowIdx;
+  return { ...j, left: pct(s - min), width: pct(e - s + 1), label: `${j.short}, ${j.when[0]} ${j.when[1]}` };
+});
+
+const firstYear = Math.floor(min / 12) + 1;
+const years = [];
+for (let y = firstYear; y <= now.getFullYear(); y++) years.push({ y, left: pct(y * 12 - min) });
+---
+<div class="timeline" role="group" aria-label="Career timeline">
+  <div class="tl-row tl-head">
+    <span></span>
+    <div class="tl-track">
+      {years.map((yr) => <span class="tl-year" style={`left:${yr.left}`}>{yr.y}</span>)}
+    </div>
+  </div>
+  <div class="tl-body">
+    <div class="tl-lines" aria-hidden="true">
+      {years.map((yr) => <span class="tl-line" style={`left:${yr.left}`}></span>)}
+    </div>
+    {rows.map((r) => (
+      <div class="tl-row">
+        <span class="tl-label">{r.short}</span>
+        <div class="tl-track">
+          <a class="tl-bar" href={`#job-${r.id}`} style={`left:${r.left};width:${r.width}`} aria-label={r.label}></a>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>

@@ -1,0 +1,11 @@
+---
+import { projectId } from '../lib/skills.js';
+
+const { projects } = Astro.props;
+---
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
+  <dl class="skills">
+    {projects.map((p, i) => (<div class="proj" id={projectId(i)}><dt>{p.label}</dt><dd>{p.text}</dd></div>))}
+  </dl>
+</section>

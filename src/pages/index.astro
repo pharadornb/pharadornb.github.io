@@ -1,0 +1,52 @@
+---
+import Base from '../layouts/Base.astro';
+import Rail from '../components/Rail.astro';
+import Experience from '../components/Experience.astro';
+import Projects from '../components/Projects.astro';
+import Skills from '../components/Skills.astro';
+import Education from '../components/Education.astro';
+import Clamp from '../components/Clamp.astro';
+import resume from '../data/resume.en.json';
+import { linkSkills } from '../lib/skills.js';
+
+const skills = linkSkills(resume.skills, resume.experience, resume.projects);
+
+// Person markup. No email, phone or birth date on purpose.
+const person = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: resume.name,
+  alternateName: resume.nameTh,
+  jobTitle: resume.title,
+  url: Astro.site?.href,
+  image: new URL('/og.png', Astro.site).href,
+  description: resume.summary,
+  address: { '@type': 'PostalAddress', addressLocality: 'Bangkok', addressCountry: 'TH' },
+  alumniOf: { '@type': 'CollegeOrUniversity', name: 'Suranaree University of Technology' },
+  knowsLanguage: ['th', 'en'],
+  knowsAbout: ['Full-stack development', 'ASP.NET Core', 'React', 'Go', 'Docker', 'Microservices'],
+  sameAs: [resume.links.github, resume.links.linkedin],
+};
+---
+<Base
+  title={`${resume.name} — ${resume.title}`}
+  description="Full stack engineer building and supporting healthcare software in Bangkok. .NET, React, Go, Docker. Experience, projects and resume."
+  jsonLd={person}
+>
+  <div class="wrap">
+    <div class="layout">
+      <Rail data={resume} />
+      <main>
+        <Skills skills={skills} />
+        <Experience jobs={resume.experience} />
+        <Projects projects={resume.projects} />
+        <Education education={resume.education} />
+      </main>
+    </div>
+    <Clamp />
+    <footer>
+      <span>&copy; <span id="year">2026</span> {resume.name}</span>
+      <span>Last updated November 2026</span>
+    </footer>
+  </div>
+</Base>

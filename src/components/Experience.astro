@@ -1,0 +1,32 @@
+---
+import { fmt } from '../lib/fmt.js';
+import { pointId } from '../lib/skills.js';
+import Timeline from './Timeline.astro';
+import Icon from './Icon.astro';
+
+const { jobs } = Astro.props;
+---
+<section id="work" class="reveal">
+  <h2>Experience</h2>
+  <Timeline jobs={jobs} />
+  {jobs.map((job, j) => (
+    <article class="job" id={`job-${job.id}`}>
+      <div>
+        <div class="org"><h3>{job.company}</h3><span class="loc"><Icon name="map-pin" />{job.location}</span></div>
+        <ul class="roles">
+          {job.roles.map((role) => (
+            <li>
+              <span class="title">
+                {role.title}{role.badge && <span class="badge">{role.badge}</span>}
+              </span>
+              <span class="span">{role.period}</span>
+            </li>
+          ))}
+        </ul>
+        <ul class="points">
+          {job.points.map((p, i) => (<li id={pointId(j, i)} set:html={fmt(p.text, p.bold)} />))}
+        </ul>
+      </div>
+    </article>
+  ))}
+</section>
