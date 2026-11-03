@@ -1,0 +1,33 @@
+---
+import Icon from './Icon.astro';
+
+const { data } = Astro.props;
+const { links } = data;
+---
+<aside class="rail">
+  <p class="where"><Icon name="map-pin" />{data.location}</p>
+  <h1>{data.name} <span class="nick">{data.nickname}</span></h1>
+  <p class="name-th" lang="th">{data.nameTh}</p>
+  <p class="role">{data.title}</p>
+  <p class="intro">{data.summary}</p>
+
+  <ul class="links">
+    <li>
+      <a href="#" id="email" data-u={links.email.user} data-d={links.email.domain}>
+        <span class="lbl"><Icon name="mail" />Email</span><span class="arrow" aria-hidden="true">→</span>
+      </a>
+    </li>
+    <li>
+      <a href={links.github} target="_blank" rel="noopener">
+        <span class="lbl"><Icon name="github" />GitHub</span><span class="arrow" aria-hidden="true">→</span>
+      </a>
+    </li>
+    <li>
+      <a href={links.linkedin} target="_blank" rel="noopener">
+        <span class="lbl"><Icon name="linkedin" />LinkedIn</span><span class="arrow" aria-hidden="true">→</span>
+      </a>
+    </li>
+  </ul>
+
+  <button class="theme" id="theme" type="button" aria-label="Toggle dark mode"><span class="t-moon"><Icon name="moon" /></span><span class="t-sun"><Icon name="sun" /></span></button>
+</aside>

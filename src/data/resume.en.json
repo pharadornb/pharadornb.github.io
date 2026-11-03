@@ -1,0 +1,254 @@
+{
+  "name": "Pharadorn Boonruam",
+  "nameTh": "ภราดร บุญร่วม",
+  "nickname": "(BOM+)",
+  "title": "Full Stack Engineer",
+  "location": "Bangkok, Thailand",
+  "summary": "Full-stack development and support engineer with nearly five years of experience across applications, front-end and back-end systems, and product support. Interested in system design, architecture, development, maintenance, and troubleshooting to deliver high-quality, high-performance products to the organization.",
+  "links": {
+    "email": {
+      "user": "pharadorn.br",
+      "domain": "gmail.com"
+    },
+    "github": "https://github.com/pharadornb",
+    "linkedin": "https://linkedin.com/in/pharadornb"
+  },
+  "experience": [
+    {
+      "company": "SoftTech MedCare Co., Ltd.",
+      "location": "Khlong Sam Wa, Bangkok",
+      "when": [
+        "May 2024",
+        "to present"
+      ],
+      "roles": [
+        {
+          "title": "Technical Support Engineer",
+          "badge": "Promoted",
+          "period": "Dec 2025 – Present"
+        },
+        {
+          "title": "Full Stack Developer",
+          "period": "May 2024 – Nov 2025"
+        }
+      ],
+      "points": [
+        {
+          "text": "Co-developed systems for medical devices, including an overview and operations portal (PWA), a desktop application for claims and reimbursement with government agencies, and integrations with third-party devices. Supported multi-tenant operations on a microservice architecture using ASP.NET Core Web API, Ionic Angular, Telerik, and Raspberry Pi.",
+          "bold": []
+        },
+        {
+          "text": "Designed, architected, and developed a maintenance support system for medical equipment technicians using Go and React, reducing reliance on Excel records.",
+          "bold": []
+        },
+        {
+          "text": "Provided technical support and resolved product issues for customers, both on-site and remotely, with positive customer feedback. Contributed to automation solutions, including a chatbot, system manuals, and email and group notification systems.",
+          "bold": []
+        }
+      ],
+      "id": "softtech",
+      "short": "SoftTech",
+      "start": "2024-05",
+      "end": null
+    },
+    {
+      "company": "Royal Thai Army",
+      "location": "Fort Adison, Saraburi",
+      "when": [
+        "May 2023",
+        "to Apr 2024"
+      ],
+      "roles": [
+        {
+          "title": "Information Officer (Military Service)",
+          "period": "May 2023 – Apr 2024"
+        }
+      ],
+      "points": [
+        {
+          "text": "IT support at an army camp hospital: restructured the annual health check-up booking system and supported hospital staff.",
+          "bold": []
+        }
+      ],
+      "id": "army",
+      "short": "Royal Thai Army",
+      "start": "2023-05",
+      "end": "2024-04"
+    },
+    {
+      "company": "G-Able Public Co., Ltd.",
+      "location": "Yannawa, Bangkok",
+      "when": [
+        "Mar 2022",
+        "to May 2023"
+      ],
+      "roles": [
+        {
+          "title": "Software Developer",
+          "period": "Mar 2022 – May 2023"
+        }
+      ],
+      "points": [
+        {
+          "text": "Co-developed and supported an IVR Portal using ASP.NET Web Forms, SAP Crystal Reports, stored procedures, and batch scripts, including error capture categorization and debugging. Also developed report previews and a B2B Portal using ASP.NET C# and Vue.",
+          "bold": []
+        },
+        {
+          "text": "Architected and developed an Automation Cloud Provisioning Portal based on Ansible and Terraform using Angular, MUI, and Bootstrap, reducing manual YAML preparation and human error from two days to only a few clicks.",
+          "bold": [
+            "from two days to only a few clicks"
+          ]
+        }
+      ],
+      "id": "gable",
+      "short": "G-Able",
+      "start": "2022-03",
+      "end": "2023-05"
+    },
+    {
+      "company": "Prior Solution Co., Ltd.",
+      "location": "Bang Sue, Bangkok",
+      "when": [
+        "Jul 2021",
+        "to Nov 2021"
+      ],
+      "roles": [
+        {
+          "title": "Java Developer (Cooperative Education)",
+          "period": "Jul 2021 – Nov 2021"
+        }
+      ],
+      "points": [
+        {
+          "text": "Developed a web-based game using Angular and PrimeNG, and enhanced the IAM user access management system using React.",
+          "bold": []
+        }
+      ],
+      "id": "prior",
+      "short": "Prior Solution",
+      "start": "2021-07",
+      "end": "2021-11"
+    }
+  ],
+  "projects": [
+    {
+      "label": "Senior Project",
+      "text": "ITSC Web App, a service that screens and compiles skills and competencies from CVs to assist companies in selecting job applicants. Developed with React, MUI, and Bootstrap on Docker containers."
+    },
+    {
+      "label": "Study Projects",
+      "text": "Travel Plan (PHP web application, Android application in Java, and cross-platform application in React Native with Firebase), Thai Rice Web 3.0 (Semantic Web, SPARQL), and Korat LRT (Java desktop application). Deployed projects with Docker on Azure App Service."
+    },
+    {
+      "label": "Personal Project",
+      "text": "Developed an ERP platform integrated with Odoo that supports multi-tenant provisioning and customizable modules based on user requirements."
+    }
+  ],
+  "skills": [
+    {
+      "label": "Programming Languages",
+      "items": [
+        {
+          "name": "C#",
+          "match": [
+            "C#",
+            "ASP.NET"
+          ]
+        },
+        "TypeScript",
+        "JavaScript",
+        {
+          "name": "Go (Golang)",
+          "match": [
+            "Go",
+            "Golang"
+          ]
+        },
+        {
+          "name": "SQL",
+          "match": [
+            "SQL",
+            "stored procedures"
+          ]
+        },
+        "Python"
+      ]
+    },
+    {
+      "label": "Frameworks",
+      "items": [
+        {
+          "name": ".NET",
+          "match": [
+            "ASP.NET"
+          ]
+        },
+        {
+          "name": "ASP.NET Core",
+          "match": [
+            "ASP.NET"
+          ]
+        },
+        "React",
+        "Next.js",
+        "Angular",
+        "Ionic"
+      ]
+    },
+    {
+      "label": "Cloud & DevOps",
+      "items": [
+        "Docker",
+        {
+          "name": "CI/CD (GitHub Actions, CircleCI)",
+          "match": [
+            "GitHub Actions",
+            "CircleCI"
+          ]
+        },
+        "Azure",
+        "Nginx",
+        "Linux",
+        "Cloudflare",
+        {
+          "name": "Logging (Seq)",
+          "match": [
+            "Seq"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Databases",
+      "items": [
+        "SQL Server",
+        "PostgreSQL",
+        "Oracle",
+        "MySQL",
+        "Firebase"
+      ]
+    },
+    {
+      "label": "Tools & Platforms",
+      "items": [
+        "Git",
+        "Jira",
+        "Linear",
+        "Figma",
+        "Odoo",
+        "n8n",
+        "Raspberry Pi"
+      ]
+    },
+    {
+      "label": "Strengths",
+      "text": "System analysis and design, microservices architecture, Agile teamwork, troubleshooting, customer-facing technical support"
+    }
+  ],
+  "education": {
+    "period": "2018 – 2022",
+    "title": "B.I.S. Information Science (Enterprise Software Program), Honors",
+    "school": "Suranaree University of Technology, Nakhon Ratchasima",
+    "detail": "Institute of Digital Technology, School of Information Technology"
+  }
+}
